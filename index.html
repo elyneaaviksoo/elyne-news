@@ -4,490 +4,547 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elyne Igapäevane Ajaleht</title>
+    <title>Elyne Ajaleht</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #fcfcfc; color: #111827; }
-        h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
-        .bg-blush { background-color: #fdf2f8; }
-        .text-darkgray { color: #374151; }
+        body { font-family: 'Lato', sans-serif; background-color: #faf9f9; color: #1a1a1a; }
+        h1, h2, h3, .magazine-font { font-family: 'Playfair Display', serif; }
+        .text-blush { color: #d98cb3; } 
+        .border-blush { border-color: #fce4ec; } 
+        .bg-blush-light { background-color: #fff0f5; }
     </style>
 </head>
 <body class="antialiased">
 
     <!-- Päis -->
-    <header class="bg-blush py-20 px-4 mb-16 border-b border-pink-100 text-center">
-        <h1 class="text-6xl md:text-8xl font-bold text-gray-900 mb-6 tracking-tight">Elyne Ajaleht</h1>
-        <p class="text-xl text-gray-700 max-w-2xl mx-auto font-light">Sinu isiklik, tehisintellekti poolt kokku pandud ülevaade tänase päeva olulisimatest sündmustest terves maailmas.</p>
+    <header class="bg-blush-light pt-24 pb-20 px-4 mb-20 border-b-2 border-blush text-center">
+        <h1 class="text-7xl md:text-[9rem] font-black text-gray-900 mb-4 tracking-tighter uppercase leading-none">Elyne</h1>
+        <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto font-light tracking-wide">Päevakajaline ülevaade maailma olulisimatest sündmustest.</p>
     </header>
 
-    <main class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <main class="max-w-screen-2xl mx-auto px-6 sm:px-12 lg:px-16">
 
-    <section class="mb-20">
-        <h2 class="text-5xl font-bold text-gray-900 mb-10 pb-4 border-b-2 border-pink-200">Päevakajalised sündmused</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <section class="mb-28">
+        <div class="flex items-center mb-12">
+            <h2 class="text-5xl md:text-6xl font-bold text-gray-900 italic pr-6">Päevakajalised sündmused</h2>
+            <div class="flex-grow border-t-2 border-blush"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-16">
     
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://d2cbg94ubxgsnp.cloudfront.net/Pictures/1024x536/6/3/8/551638_44286_2026_443_fig3_htmlcopy_752309.jpg" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Kehas lagunevad patareid võiksid toita neelatavaid meditsiiniseadmeid</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Uuring näitab, et magneesium-molübdeeni patareid suudavad traadita jälgijaid ja stimulatsioonikapsleid mitu päeva toita enne, kui need ohutult seedetraktis lagunevad.</p>
-                <a href="https://www.chemistryworld.com/news/batteries-that-break-down-in-the-body-could-power-ingestible-medical-devices/4024296.article" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://www.midwestradio.ie/wp-content/uploads/2025/02/Dara-Calleary-3.png" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Euroopa</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Rahastamine antud kogukonna sõidukitele</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Kuus organisatsiooni Mayo maakonnas saavad kasu rahastamisest kogukonna sõidukite jaoks.</p>
+            <a href="https://www.midwestradio.ie/news/funding-granted-for-community-vehicles/" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://www.rte.ie/images/0023286e-1600.jpg" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">SF alternatiivne eelarve keskendub elamiskuludele ja teisele kodule</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Sinn Féin pakub välja püsiva kütusehinna langetamise 10 sendi võrra ning aktsiisilangetuste pikendamise veel kuue kuu võrra osana nende 13,4 miljardi euro suurusest alternatiivsest eelarvepaketist.</p>
-                <a href="https://www.rte.ie/news/politics/2026/1001/1593609-sf-alternative-budget-living-costs/" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://e0.365dm.com/26/09/1600x900/skysports-tyson-fury-anthony_7365363.jpg?20260930233805" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Euroopa</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Tyson Fury vs Anthony Joshua: Rivaalid näitavad austust sõbralikul esimesel pressikonverentsil - aga kui kaua see kestab?</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Tyson Fury ja Anthony Joshua lahendavad lõpuks oma rivaalitsemise Briti raskekaalu suurejoonelises matšis Cardiffi Principality staadionil reedel, 11. detsembril; Fury ja Joshua vahetasid esimesel pressikonverentsil Londonis mõnitusi; seejärel astusid briti duo vastamisi.</p>
+            <a href="https://www.skysports.com/boxing/news/13593818/tyson-fury-vs-anthony-joshua-rivals-show-respect-at-friendly-first-press-conference-but-how-long-will-it-last" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://s.yimg.com/lo/mysterio/api/2321cb4d57135ff989023ba5f6aef9805af80edee878a4035602d8f9e3efdc81/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fmandatory_995%2Fa6074ad83ef7912a67cf517c32a19909.jpg" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Prints Harry seisab silmitsi 'tohutu' survega lõpetada sidemed printsess Diana vennaga - Allikas</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Allika sõnul seisab prints Harry silmitsi kasvava survega kaugeneda Charles Spencerist pärast tema vastuolulise mälestuste raamatu avaldamist. Insajderi sõnul kaalub prints sidemete katkestamist oma onu...</p>
-                <a href="https://www.yahoo.com/entertainment/celebrity/articles/prince-harry-faces-huge-pressure-084154496.html" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://cdn.alquds.com/uploads/4e47ee893338921fd133dbacce13d6df.jpg" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Globaalne</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Neljanda vooru tulemused ÜRO peasekretäri valimisel</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Neljanda mitteametliku proovihääletuse tulemused Julgeolekunõukogus näitasid, et Rebeca Grynspan juhib võidujooksu ÜRO peasekretäri ametikohale.</p>
+            <a href="https://alquds.com/en/posts/259972-greenspan-leads-un-secretary-general-race-in-fourth-straw-poll" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://images.gmanews.tv/webpics/2025/03/pse_2025_03_03_18_18_03.jpg" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">PSEi langeb 5 629 punktini, kui toornafta hind läheneb 100 dollarile barrelist</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Filipiinide aktsiahinnad jätkasid neljapäeval langust, langedes veelgi 5 600 punkti tasemele, kuna investorid loobusid kohalikust aktsiaturust tõusvate globaalsete kütusehindade tõttu.</p>
-                <a href="https://www.gmanetwork.com/news/money/companies/1004428/psei-sinks-to-5-629-as-crude-nears-100-per-barrel/story/" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://ichef.bbci.co.uk/news/1024/branded_news/6508/live/5b09dc50-bcc8-11f1-ae14-0b840f99ba59.jpg" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Euroopa</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Newporti bussikriis finantsprobleemide tõttu viib aruannete esitamist edasi</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Opositsiooniparteid nõuavad läbipaistvust pärast seda, kui linnavalitsusele kuuluv ettevõtte juhatus vahetati välja.</p>
+            <a href="https://www.bbc.com/news/articles/cvwyz0z09dngo" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://images.moneycontrol.com/static-mcnews/2026/10/20261001083918_NASAA.png" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">NASA uus kosmosematerjal võimaldaks astronautidel valmistada tööriistu Kuu tolmust ja jäätmetest</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">NASA eksperimentaalne materjal ühendab bakterite poolt toodetud plastikut Kuu või Marsi tolmuga, võimaldades tulevastel meeskondadel valmistada ja parandada varustust ilma ootamata tarneid Maalt.</p>
-                <a href="https://www.moneycontrol.com/europe/?url=https://www.moneycontrol.com/news/trends/nasa-s-new-space-material-could-let-astronauts-make-tools-from-moon-dust-and-waste-14042768.html" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://www.telegraph.co.uk/content/dam/business/2026/10/01/TELEMMGLPICT000489490063_17908447049130_trans_NvBQzQNjv4BqI9qG_7_6mNzIlwZsTkKqAM7NL8eUlvIUqny2M10JmUs.jpeg?impolicy=OG-Standard" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Euroopa</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Kinnisvarahinnad langevad ootamatult ostjate valmistudes intressimäärade tõusudeks</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Septembris toimunud 0,2% kinnisvarahindade langus näitab turu ebakindlust eelarve ees.</p>
+            <a href="https://www.telegraph.co.uk/business/2026/10/01/house-prices-fall-unexpectedly-as-buyers-brace-for-interest/" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://www.innovationnewsnetwork.com/wp-content/uploads/2026/09/shutterstock_2029817738.jpg" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Mida uued avastused võiksid muuta</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Uurige, mida uus ajuteaduse areng võiks tähendada laboratoorsete haigusmudelite jaoks ning miks need avastused ei loo veel ravi patsientidele.</p>
-                <a href="https://www.innovationnewsnetwork.com/brain-development-research-disease-models/74382/" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://static.lsm.lv/media/2026/07/large/1/tso3.jpg" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Euroopa</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Saeima otsustas, et LSM võib vene keeles kirjutada ainult erandjuhtudel</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Läti Rahvusringhäälingus (LSM) lubatakse venekeelset sisu avaldada vaid erakorralistel juhtudel, hädaolukorra korral või desinformatsiooni vastu võitlemiseks. T...</p>
+            <a href="https://eng.lsm.lv/article/features/media/01.10.2026-saeima-rules-that-lsm-can-write-in-russian-only-on-specific-occasions.a665628/" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://cassette.sphdigital.com.sg/image/businesstimes/979950a21c95aabcc6a2b0dcead78f5917be6e07c4e5b55629919cb84ee41bb5?w=1200&f=webp" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Jacqueline Loh lahkub MASi asejuhi ametikohalt vanemjuhtkonna ümberkorralduse käigus</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Jacqueline Loh hakkab järgmisena täitma peaarvaja rolli MD büroos.</p>
-                <a href="https://www.businesstimes.com.sg/singapore/jacqueline-loh-step-down-mas-deputy-md-senior-leadership-reshuffle" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://images.perthnow.com.au/publication/C-22955559/53a3a09ed3f088060c7ac3029fa6db7c40fcd272-16x9-x0y0w1280h720.jpg?imwidth=1200" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Aasia</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Jaapani kohus kaitseb inimhäält ajaloolises AI kohtuasjas</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Tokyos asuv kohus tunnustas esmakordselt õigust oma häälele pärast seda, kui anime näitleja kaebas TikToki kohtusse konto üle, mis kasutas tema baritoni AI koopiat.</p>
+            <a href="https://www.perthnow.com.au/news/crime/japan-court-protects-human-voices-in-landmark-ai-case-c-22955559" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://cassette.sphdigital.com.sg/image/straitstimes/5a6e0003a8fa2ecb6b0f9de04ec2362c5b7447f71fca527f64bd29443a96ce85" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Oktoobriks ennustatakse Singapurile kuivemat ja soojemat ilma</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Pärast vihmasemat ja äikeselist septembri lõppu oodatakse Singapuris oktoobri alguses sooja ja kuivemat ilma, mis on allpool keskmist sademete hulka. Lisainfot leiab straitstimes.com lehelt.</p>
-                <a href="https://www.straitstimes.com/singapore/drier-start-to-october-expected-in-singapore-after-rainy-end-to-september" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://cf-images.assettype.com/outlookindia/2026-10-01/u2qqbxui/Asian-Games-2026-India-Vs-Sri-Lanka-Cricket-semi-final-1.jpg?w=1200&ar=40%3A21&auto=format%2Ccompress&ogImage=true&mode=crop&enlarge=true&overlay=false&overlay_position=bottom&overlay_width=100" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Aasia</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">India purustas Sri Lanka 124 jooksuga ja jõudis Aasia mängude kriketi finaali vastamisi Pakistaniga</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">India purustas Sri Lanka 124 jooksuga ja jõudis Aasia mängude T20 finaali. Ishan Kishani särav, võitmatu 80 ja Vaibhav Sooryavanshi kiire 38 aitasid Indial postitada 169 jooksu. Sri Lanka vastus muutus õudusunenäoks, kui Jasprit Bumrah lõi kaks korda esimeses tulises üle. Spinimehed Axar Patel ja Abhishek Sharma kasutasid muutuvat põrget, samal ajal kui elektriline väljakupanek tõi mitu väljalöömist. Sri Lanka ründav löögijärjestus kukkus täielikult kokku, saades vaid 45 jooksu 9,5 üle. Valitsev võit seab nad vastamisi Pakistaniga kuldmedaliheitluses.</p>
+            <a href="https://www.outlookindia.com/sports/cricket/india-vs-sri-lanka-asian-games-2026-mens-semi-final-nisshin-in-pics" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         </div></section>
-    <section class="mb-20">
-        <h2 class="text-5xl font-bold text-gray-900 mb-10 pb-4 border-b-2 border-pink-200">Majandus & Äri</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <section class="mb-28">
+        <div class="flex items-center mb-12">
+            <h2 class="text-5xl md:text-6xl font-bold text-gray-900 italic pr-6">Majandus & Äri</h2>
+            <div class="flex-grow border-t-2 border-blush"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-16">
     
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://images.gmanews.tv/webpics/2025/03/pse_2025_03_03_18_18_03.jpg" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">PSEi langeb 5 629 punktini, kui toornafta hind läheneb 100 dollarile barrelist</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Filipiini aktsiahinnad jätkasid neljapäeval langust, langedes veelgi 5 600 punkti tasemele, kuna investorid loobusid kohalikust aktsiaturust tõusvate maailma kütusehindade tõttu.</p>
-                <a href="https://www.gmanetwork.com/news/money/companies/1004428/psei-sinks-to-5-629-as-crude-nears-100-per-barrel/story/" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://ichef.bbci.co.uk/news/1024/branded_news/6508/live/5b09dc50-bcc8-11f1-ae14-0b840f99ba59.jpg" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Euroopa</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Newporti bussikriis: finantsprobleemid viivitavad aruannetega</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Newporti linna opositsiooniparteid nõuavad läbipaistvust pärast seda, kui linnaomanduses oleva ettevõtte juhatus ümber korraldati.</p>
+            <a href="https://www.bbc.com/news/articles/cvwyz0z09dngo" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://live.euronext.com/favicon.ico" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">BT tähistab ajaloolise kaubamärgi taaselustamist BT TV teenuse käivitamisega</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Briti ettevõte BT käivitas neljapäeval BT-brändiga TV-teenuse, tähistades sellega ajaloolise kaubamärgi taaselustamist pärast otsust keskenduda eelmisel aastal uuemale EE kaubamärgile. Tegevjuht Allison Kirkby järgib kolme kaubamärgi strateegiat, kus EE suunatakse tavatarbijatele, BT lojaalsetele klientidele ja Plusnet väärtuskesksetele klientidele. BT käivitas mais BT-brändiga mobiiliteenuse koos suure turunduskampaaniaga, mis rõhutas ajaloolist kaubamärki.</p>
-                <a href="https://live.euronext.com/en/financial-news/bt-completes-historic-brand-revival-launch-bt-tv-service" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://www.telegraph.co.uk/content/dam/business/2026/10/01/TELEMMGLPICT000489490063_17908447049130_trans_NvBQzQNjv4BqI9qG_7_6mNzIlwZsTkKqAM7NL8eUlvIUqny2M10JmUs.jpeg?impolicy=OG-Standard" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Euroopa</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Kinnisvarahinnad langevad ootamatult, ostjad valmistuvad intressimäärade tõusudeks</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Septembris toimunud 0,2% kinnisvarahindade langus näitab turu ebakindlust eelarve ees.</p>
+            <a href="https://www.telegraph.co.uk/business/2026/10/01/house-prices-fall-unexpectedly-as-buyers-brace-for-interest/" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://cassette.sphdigital.com.sg/image/businesstimes/979950a21c95aabcc6a2b0dcead78f5917be6e07c4e5b55629919cb84ee41bb5?w=1200&f=webp" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Jacqueline Loh lahkub MASi asemeesimehe ametikohalt vanemjuhtkonna ümberkorralduste käigus</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Jacqueline Loh hakkab järgmisena täitma peaarvaja rolli aseesimehe büroos.</p>
-                <a href="https://www.businesstimes.com.sg/singapore/jacqueline-loh-step-down-mas-deputy-md-senior-leadership-reshuffle" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://static.srpcdigital.com/styles/1200x600/public/2026-10/1804146_0.jpeg.webp?VersionId=btrCHoEsz6r.bo9uOEgQlJ.lQNqbPLnr" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Aasia</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Infineon avab 1,4 miljardi dollari suuruse tehase Tais, kui riik suurendab pooljuhtide tootmist</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Saksamaa kiibitootja Infineon Technologies avas neljapäeval uue rajatise Tais, kui Kagu-Aasia teine suurim majandus püüab meelitada investeeringuid pooljuhtide tööstusesse tõusva piirkondliku konkurentsi tingimustes. Uus rajatis Bangkoki lähedal on tagumine tootmiskoht, kus kiipe töödeldakse lõpptooteks ja testitakse pooljuhtideks, mille algne investeering ületab 100 miljonit eurot (113,57 miljonit dollarit), teatas ettevõte briifingul. Tai Investeerimisnõukogu sõnul oli projekti väärtus 1,4 miljardit dollarit, teatas Reuters.</p>
+            <a href="https://english.aawsat.com/technology/5324670-infineon-opens-14-billion-thailand-plant-country-ramps-semiconductor-push" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://paultan.org/image/2026/09/Leapmotor-B10-EZ5-Package-1200x630.jpg" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Leapmotor B10 nüüd koos tasuta EZ5 paketiga väärtusega kuni RM11,188, muutes elektriauto omamise veelgi lihtsamaks</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Leapmotor B10 on nüüd kohaliku kokkupanekuga, pakkudes suurepärast väärtust Malaisia ostjatele, kes otsivad elektriautot. Hoolimata olulisest investeeringust kohalikku kokkupanekusse ja tootmisseadmetesse, ...</p>
-                <a href="https://paultan.org/2026/10/01/leapmotor-b10-now-with-a-complimentary-ez5-package-worth-up-to-rm11188-making-ev-ownership-even-easier/" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://www.reuters.com/resizer/v2/6HWESVXUQBP3VLVQ3GJA42M37E.jpg?auth=e2dc32b48b5b1d25771b7a134832df24b2bd934f9c7f6f437b7e0668d9caf2f3&height=1005&width=1920&quality=80&smart=true" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Aasia</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Hiina rafineerijad peatasid oktoobrikuu kütuseeksporti, allikate sõnul</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Hiina rafineerijad on peatanud naftatoodete ekspordi Hongkongi ja Macausse kuni edasise teavitamiseni Pekingist, nelja allika sõnul neljapäeval, mis pingestab veelgi kütuseturge.</p>
+            <a href="https://www.reuters.com/business/energy/view-chinese-refiners-suspend-october-fuel-exports-sources-say-2026-10-01/" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://i.guim.co.uk/img/media/76edc7923aff2ae513af828a0f5f90d7d5162337/219_0_2282_1825/master/2282.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&precrop=40:21,offset-x50,offset-y0&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=4c9d4bf314df3c3f1df3d105a0be2927" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Ülemaailmne võlakirjade müügiralli intensiivistub, kui Suurbritannia pikaajalised laenamiskulud ületavad 6%</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Kartused, et USA laenamiskulud on jätkusuutmatud, viivad Suurbritannia 30-aastase võlakirja tootluse tasemele, mida pole nähtud alates 1998. aastast.</p>
-                <a href="https://www.theguardian.com/business/2026/oct/01/global-bond-sell-off-uk-long-term-borrowing-costs-us-bond-yield" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://static.ffx.io/images/$zoom_0.9952%2C$multiply_2%2C$ratio_1.777778%2C$width_1059%2C$x_261%2C$y_122/t_crop_custom/c_scale%2Cw_1200%2Cq_88%2Cf_auto/624a8f7fbf3faa26ff6eb5cfd36b5e163704ca44" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Austraalia/Okeaania</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Kinnisvara väärtused langevad, kui langus haarab Austraalia pealinnu</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Austraalia kinnisvaraturg on saanud taas löögi, kus peaaegu iga pealinna eeslinn on viimase kolme kuu jooksul väärtuses langenud.</p>
+            <a href="https://www.nine.com.au/australia-news/home-values-plummet-as-downturn-grips-australia-s-capital-cities-property-news-20261001-p611th.html" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://live.euronext.com/favicon.ico" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">UK tehased teatavad kasvavatest inflatsioonirõhkudest, PMI näitab</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Briti tootmiskulude surve suurenes septembris esimest korda nelja kuu jooksul, samal ajal kui tootmine kasvas aeglasemalt alates märtsist. Tehased teatasid sisendkulude laiemast tõusust alates juunist, samal ajal kui hinnatõus kiirenes, näitas S&P Globali ostujuhtide indeksi aruanne.</p>
-                <a href="https://live.euronext.com/en/financial-news/uk-factories-report-growing-inflation-pressures-pmi-shows" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://sm.ign.com/t/ign_za/news/e/european-c/european-commission-calls-out-riot-activision-mojang-and-mor_7e7q.1200.jpg" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Euroopa</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Euroopa Komisjon kritiseerib Riot, Activision, Mojang ja teisi seoses mängusisese valuuta ja tehingutega</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Euroopa Komisjon nõuab, et tarbijad saaksid videomänge mängida ilma, et neid petetaks rohkem raha kulutama kui nad soovivad.</p>
+            <a href="https://za.ign.com/fortnite/242437/european-commission-calls-out-riot-activision-mojang-and-more-over-in-game-currency-and-transactions" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://educationnews.co.ke/wp-content/uploads/2026/10/KNEC-e-certificate-genarated-photo.jpeg" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Kuidas saada ja kontrollida oma KCSE e</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">KNEC võimaldab nüüd alates 1989. aastast kuni tänaseni KCSE kandidaatidel genereerida ja alla laadida e-sertifikaate 1 500 KSh eest pärast kontrollimist. Selleks tuleb registreeruda, täita profiil, sisestada indeksinumber, aasta ja eksami tüüp, tasuda M-Pesa kaudu ning alla laadida PDF. Tööandjad ja asutused peavad registreeruma kontrollijatena heakskiidu saamiseks ning seejärel esitama kandidaadi andmed kontrollimiseks.</p>
-                <a href="https://educationnews.co.ke/ksh1500-and-a-few-minutes-how-to-get-and-verify-your-kcse-e-certificate/" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://img.etimg.com/thumb/msid-134613443,width-1200,height-900,imgsize-123358,overlay-economictimes/articleshow.jpg" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Aasia</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Väliskapital voolab ära. Kas India suudab investorid tagasi meelitada?</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">India seisab silmitsi väliskapitali raskema konkurentsiga, kuna FPI väljavool suureneb ja globaalsed investorid suunavad raha tehisintellekti, pooljuhtide ja tootmiskeskuste poole Taiwanis ja Lõuna-Koreas. India FDI väljavaated jäävad vastupidavaks, kuid poliitiline ebakindlus, tollid, regulatsioonid ja nõrk tootmisvõimekus võivad määrata, kas see suudab meelitada pikaajalist globaalset investeeringut.</p>
+            <a href="https://economictimes.indiatimes.com/news/economy/policy/foreign-capital-is-slipping-away-can-india-lure-investors-back-fpi-outflows-ai-semiconductors-manufacturing-investors/articleshow/134613224.cms?from=mdr" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://techafricanews.com/wp-content/uploads/2026/10/pwc-1.png" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">PwC Lähis-Ida ja Google Cloud avavad AI kogemusala Saudi Araabias</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">PwC ja Google Cloud avavad Saudi Araabias AI kogemusala, mis aitab organisatsioonidel kavandada ja rakendada tehisintellekti lahendusi, mis viivad neid pilootprojektidest praktilise kasutuseni enesekindlalt. Uus ala on mõeldud klientide ürituste, töötubade ja sektorispetsiifiliste demonstratsioonide korraldamiseks.</p>
-                <a href="https://techafricanews.com/2026/10/01/pwc-middle-east-google-cloud-launch-ai-experience-zone-in-saudi-arabia/" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://images.gmanews.tv/webpics/2025/03/pse_2025_03_03_18_18_03.jpg" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Aasia</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">PSEi langeb 5,629 punktini, kui toornafta hind läheneb 100 dollarile barrelist</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Filipiinide aktsiahinnad jätkasid neljapäeval langust, langedes veelgi 5,600 punkti tasemele, kuna investorid loobusid kohalikust aktsiaturust tõusvate globaalsete kütusehindade tõttu.</p>
+            <a href="https://www.gmanetwork.com/news/money/companies/1004428/psei-sinks-to-5-629-as-crude-nears-100-per-barrel/story/" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         </div></section>
-    <section class="mb-20">
-        <h2 class="text-5xl font-bold text-gray-900 mb-10 pb-4 border-b-2 border-pink-200">Poliitika & Geopoliitika</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <section class="mb-28">
+        <div class="flex items-center mb-12">
+            <h2 class="text-5xl md:text-6xl font-bold text-gray-900 italic pr-6">Poliitika & Geopoliitika</h2>
+            <div class="flex-grow border-t-2 border-blush"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-16">
     
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://english.radio.cz/sites/default/files/styles/facebook/public/images/869104493943acaf46052725c49c5faa.jpg?itok=58pxiBZv" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Ajastu lõpp: Viimane Baťa jalatsitehas Kesk-Euroopas teatab sulgemisest</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Baťa ettevõte on ametlikult teatanud, et suletakse nende viimane tehas Kesk-Euroopas, lõpetades lõplikult traditsioonilise jalatsibrändi tootmise selles piirkonnas.</p>
-                <a href="https://english.radio.cz/end-era-last-bata-footwear-factory-central-europe-announces-closure-8898767" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://issafrica.s3.amazonaws.com/site/images/banners/1790844706883-2026-10-01-iss-today-banner.jpg" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Aafrika</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Dangote ja Musk: Aafrikal on vaja nii tööstureid kui ka tehnoloogia innovaatoreid</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Ettevõtjad esindavad erinevaid ärijuhtimise vorme ning valitsused peavad looma tingimused mõlema õitsenguks.</p>
+            <a href="https://issafrica.org/iss-today/dangote-and-musk-africa-needs-both-industrialists-and-tech-innovators" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://eswatinipositivenews.online/wp-content/uploads/2026/10/young-creatives.jpg" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">NOORED LOOMEINIMESED KUTSUTUD KANDMA ESWATINI LOOD MAAILMALE</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Genesis Ekucaleni Creative Schools Festivalil võtsid noored talendid lavalaudadel keskse koha, kus kunst sai klassiruumiks ning õpilasi julgustati jutustama Eswatini lugusid.</p>
-                <a href="https://eswatinipositivenews.online/this-is-your-beginning-young-creatives-urged-to-carry-eswatinis-stories-to-the-world/" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://cdn.creamermedia.com/assets/articles/images/resized/0001302981_resized_webberwentzellinklaters1022.jpg" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Aafrika</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Uus ajastu diislikütuse tagasimaksetele: rohkem kui lihtsalt registreerimise harjutus</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Ettevõtted, kes taotlevad diislikütuse tagasimakseid, võivad näha Lõuna-Aafrika Maksuhalduri uut diislikütuse tagasimakse registreerimissüsteemi kui pelgalt haldusmuudatust. Siiski näitavad reformid palju põhimõttelisemat muutust. Esimest korda liigub Lõuna-Aafrika pühendunud diislikütuse tagasimakse raamistikku, mis on eraldatud käibemaksusüsteemist, tuues kaasa uued registreerimiskohustused, suurema tarneahela nähtavuse ja potentsiaalselt uue keskendumise vastavusele ja tõendamisele.</p>
+            <a href="https://www.polity.org.za/article/a-new-era-for-diesel-refunds-more-than-just-a-registration-exercise-2026-10-01" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://ichef.bbci.co.uk/news/1024/branded_news/3cda/live/258e7a70-bd6f-11f1-8134-9503562e5ca9.jpg" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Austusavaldused "inspireerivale" saatejuhile ja Childline'i asutajale</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Childline'i direktor nimetas Dame Esther Rantzeni "inspireerivaks isikuks".</p>
-                <a href="https://www.bbc.com/news/articles/cm3wjwxg3e74o" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://thediplomaticinsight.com/wp-content/uploads/0-233.webp" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Okeaania</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Vaikne ookean võõrustab esimest eel-COPi, kui kliimamõjutajad suunduvad Fidžile ja Tuvalule</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Ministrid ja juhid kogunevad 5.-8. oktoobrini, kuu aega enne COP31 toimumist Türki.</p>
+            <a href="https://thediplomaticinsight.com/pacific-to-host-pre-cop-fiji-tuvalu/" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://imagedelivery.net/XO8UY-c6-LfWgEjQsN8IQw/2e3a2c77-3117-48ea-973f-8a37c91c3e00/public" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Rootsi viib Ukraina taastusravispetsialistidele esimese Renovator koolituse</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Rootsi on NATO Renovator projekti raames läbi viinud esimese koolituse, pakkudes digitaalset taastusravi juhendamist Ukraina tervishoiutöötajatele.</p>
-                <a href="https://nordicdefencesector.com/en/article/sweden-delivers-first-renovator-training-to-ukrainian-rehabilitation-staff" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://static.kyivpost.com/storage/2026/10/01/0df543e054f2cf8e20f2aa2d33179d55.jpg?w=1200&q=90&f=jpg" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Põhja-Ameerika</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Trump jätab olulised USA liitlased NATO grupikohtumisest välja</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Pentagoni juhitud Bergen Group kohtub Poolas, samal ajal kui välja jäetud liitlased küsivad Washingtoni kriteeriumide kohta ja hoiatavad NATO lõhestamise eest.</p>
+            <a href="https://www.kyivpost.com/post/85825" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://news.inbox.eu/w/img/0f/ba/0fba3b6e2ae5e7e34c.webp" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Kuidas läks Balti Barberi Expo 2026 maailma parimate habemeajamistähtedega osalemisel</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Ürituse raames oli pealava pühendatud eksklusiivsetele etendustele ja meistriklassidele. Parimad spetsialistid jagasid kaasaegseid tehnikaid, ärilisi lähenemisviise, tööfilosoofiat ja trende, mis määravad tööstuse arengut.</p>
-                <a href="https://news.inbox.eu/150te5i-how-the-baltic-barber-expo-2026-went-with-the-participation-of-world-stars-of-barbering?language=en" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://africasustainabilitymatters.com/wp-content/uploads/2026/10/images-2026-10-01T114344.447.jpg" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Aasia</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Lõuna-Korea ja Liibüa uurivad nafta rafineerimise partnerlust, kui Seoul mitmekesistab toornafta varusid</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Lõuna-Korea ja Liibüa uurivad võimalikku nafta rafineerimise partnerlust, mis võiks ühendada Liibüa vajaduse koduste kütusevarude järele Seoul'i otsingutega rohkemate toornafta allikate leidmiseks.</p>
+            <a href="https://africasustainabilitymatters.com/south-korea-and-libya-explore-oil-refining-partnership-as-seoul-diversifies-crude-supply/" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://amaniafrica-et.org/wp-content/uploads/c-13-scaled.jpg" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Ajutine tööprogramm PSK jaoks oktoobrikuuks 2026</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Oktoobris 2026 on PSK-l plaanis töötada ajutise tööprogrammi alusel, mis hõlmab erinevaid tegevusi ja kohtumisi. Programmis on kavas arutada olulisi teemasid ning teha otsuseid, mis puudutavad organisatsiooni tegevust ja tulevikuplaane. PSK soovib oktoobris keskenduda olulistele küsimustele ja tagada tõhus töökorraldus.</p>
-                <a href="https://amaniafrica-et.org/provisional-programme-of-work-of-the-psc-for-the-month-of-october-2026/" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://www.reuters.com/resizer/v2/3S3VSIN2Y5LSZJ5UVG2EAEJKYY.jpg?auth=1004b614f8e6212088ce1885ac262a8c8186c511513104cb4d574bd124f96b3d&height=1005&width=1920&quality=80&smart=true" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Aasia</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Putin näeb APEC kohtumisest Hiina Xi-ga suhete tugevnemist, ütlevad Vene agentuurid</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Venemaa president Vladimir Putin usub, et tema kohtumine Hiina kolleeg Xi Jinpingiga APEC tippkohtumisel Hiinas järgmisel kuul toob kaasa tulemusi ja kasu suhetele, tsiteerisid Vene uudisteagentuurid teda Xi-le saadetud kirjas.</p>
+            <a href="https://www.reuters.com/world/china/putin-sees-boost-ties-apec-meet-with-chinas-xi-russian-agencies-say-2026-10-01/" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://eswatinipositivenews.online/wp-content/uploads/2026/10/young-stars.jpg" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">NOORED TÄHED ASTUVAD LAVALE OKTOOBRI TEATRIFESTIVALI ALGUSES</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Oktoobri rahvusvahelise teatrifestivali avanädalal on laval üle 20 kooli, kus Genesis Ekucaleni Kooli loomingulise kunsti programm annab noortele emaSwatile võimaluse oma oskusi lihvida tuntud Aafrika teatripraktikute juhendamisel. Programm, mis ametlikult avati, on võimalus noortele talentidele end näidata ja arendada.</p>
-                <a href="https://eswatinipositivenews.online/young-stars-take-centre-stage-as-october-theatre-festival-kicks-off/" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://english.radio.cz/sites/default/files/styles/facebook/public/images/869104493943acaf46052725c49c5faa.jpg?itok=58pxiBZv" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Euroopa</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Ajastu lõpp: Viimane Baťa jalatsitehas Kesk-Euroopas teatab sulgemisest</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Baťa ettevõte on ametlikult teatanud, et sulgeb oma viimase tehase Kesk-Euroopas, lõpetades lõplikult traditsioonilise jalatsibrändi tootmise selles piirkonnas.</p>
+            <a href="https://english.radio.cz/end-era-last-bata-footwear-factory-central-europe-announces-closure-8898767" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://cajnewsafrica.com/wp-content/uploads/2025/11/cropped-caj-logo-new-1-32x32.jpg" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Ukraina sõda pakub õppetunde Aafrikale</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Aafrika liidreid on kutsutud tõmbama olulisi poliitilisi ja majanduslikke õppetunde jätkuvast Venemaa-Ukraina sõjast, eriti globaalsete jõudude muutuvate huvide ja tagajärgede osas riikidele, kes astuvad geopoliitilistesse konfliktidesse ilma et nad esmalt kindlaks teeksid, mida nad võidavad. Poliitikaanalüütik, majandusteadlane ja endine Zimbabwe Diaspora</p>
-                <a href="https://cajnewsafrica.com/2026/10/01/ukraine-war-offers-lessons-for-africa/" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://eswatinipositivenews.online/wp-content/uploads/2026/10/young-creatives.jpg" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Aafrika</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">NOORED LOOMEINIMESED KUTSUTUD KANDMA ESWATINI LOOD MAAILMALE</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Genesis Ekucaleni Creative Schools Festivalil võtsid noored talendid lavalaudadel keskse koha, kus kunst sai klassiruumiks ning õpilasi julgustati jagama Eswatini lugusid. See oli platvorm eneseväljenduseks ja võimalik alguspunkt noorte loovusele.</p>
+            <a href="https://eswatinipositivenews.online/this-is-your-beginning-young-creatives-urged-to-carry-eswatinis-stories-to-the-world/" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         </div></section>
-    <section class="mb-20">
-        <h2 class="text-5xl font-bold text-gray-900 mb-10 pb-4 border-b-2 border-pink-200">Teadus & Haridus</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <section class="mb-28">
+        <div class="flex items-center mb-12">
+            <h2 class="text-5xl md:text-6xl font-bold text-gray-900 italic pr-6">Teadus & Haridus</h2>
+            <div class="flex-grow border-t-2 border-blush"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-16">
     
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://images.moneycontrol.com/static-mcnews/2026/10/20261001083918_NASAA.png" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">NASA uus kosmosematerjal võimaldaks astronautidel valmistada tööriistu Kuu tolmust ja jäätmetest</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">NASA eksperimentaalne materjal ühendab bakterite poolt toodetud plastikut Kuu või Marsi tolmuga, võimaldades tulevastele meeskondadele valmistada ja parandada varustust ilma ootamata tarneid Maalt.</p>
-                <a href="https://www.moneycontrol.com/news/trends/nasa-s-new-space-material-could-let-astronauts-make-tools-from-moon-dust-and-waste-14042768.html" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://www.nature.com/oscar-static/images/favicons/nature/favicon-48x48-b52890008c.png" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Euroopa</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Mitme tunnuse valik, kasutades MGIDI-d rapsi jõudluse ja energiatõhususe samaaegseks parandamiseks kuivade maade põllumajanduses</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Uurimus keskendus optimaalse integreeritud juhtimisstrateegia leidmisele talirapsi jaoks, kasutades erinevaid mullaharimise intensiivsusi ja väetamisprotokolle. MGIDI analüüs näitas, et tavapärane mullaharimine koos sõnnikuga oli ideotüübile kõige lähemal ning tõi kaasa olulisi kasusid õli jõudluses, netoenergias, saagis ja energiakasutuse tõhususes. See strateegia vähendas oluliselt ka CO2 heitmeid, demonstreerides MGIDI tõhusust mitmekriteerilise otsustusvahendina põllukultuurisüsteemides.</p>
+            <a href="https://www.nature.com/articles/s41598-026-74193-0?error=cookies_not_supported&code=8db9e303-e3fd-4b03-90eb-5362d04c6fd1" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://www.innovationnewsnetwork.com/wp-content/uploads/2026/09/shutterstock_2029817738.jpg" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Mida uued avastused võiksid muuta</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Uus ajuteaduste uurimine võib muuta laboratoorsete haigusmudelite tähendust ning miks need avastused ei loo veel ravi patsientidele.</p>
-                <a href="https://www.innovationnewsnetwork.com/brain-development-research-disease-models/74382/" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://www.nature.com/oscar-static/images/favicons/nature/favicon-48x48-b52890008c.png" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Globaalne</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Raseduse kestus ja antenataalne kasvude discordance on peamised ennustajad väga enneaegsete kaksikutega seotud neonataalsete tulemuste puhul</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Uuringus analüüsiti 434 kaksikrasedust, mis olid haldatud rahvuslikus tertsiaarses keskuses aastatel 2013–2024. Peamine tulemus oli elulemus ilma suurema neonataalse morbiidsuseta, mida mõjutasid peamiselt raseduse kestus ja antenataalne hinnanguline loote kaalu discordance. Madalam raseduse kestus ja suurem discordance olid seotud halvemate tulemustega, samas kui dichorionicity oli seotud väiksema morbiidsuskoormusega.</p>
+            <a href="https://www.nature.com/articles/s41598-026-73411-z?error=cookies_not_supported&code=64c136f5-5e09-4dd5-bd68-12c91a8c5764" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://thequantuminsider.com/wp-content/uploads/2026/10/TokyoU.png" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Teadlased leidsid struktuurilise juhendi ebatavalisele magnetismile kvantmaterjalides</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Jaapani teadlased avastasid, et kristalli struktuurimõõtmed klassifitseerisid magnetilisi olekuid järjekindlamalt kui elektronide kontsentratsioon.</p>
-                <a href="https://thequantuminsider.com/2026/10/01/scientists-find-structural-guide-to-unusual-magnetism-in-quantum-materials/" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://www.azooptics.com/images/news/ImageForNews_30801_462962015853240746211.jpg" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Globaalne</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">NASA Rooma kosmoseteleskoobi toetamine PI täpsustehnoloogiaga</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Artiklis käsitletakse, millised PI täpsustehnoloogiad on aidanud toetada NASA Rooma kosmoseteleskoopi viimase kümnendi jooksul.</p>
+            <a href="https://www.azooptics.com/News.aspx?newsID=30801" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://images.moneycontrol.com/static-mcnews/2026/10/20261001083037_uniberser.png" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Astronoomid võivad olla avastanud hiiglasliku planeedi "elamiskõlblikus tsoonis" 140 valgusaasta kaugusel</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Võimalik planeet on umbes kuus korda massiivsem kui Jupiter ning tiirleb ebatavaliselt kuumal tähe ümber, kuid teadlased hoiatavad, et selle olemasolu pole veel kinnitatud.</p>
-                <a href="https://www.moneycontrol.com/news/trends/astronomers-may-have-found-a-giant-planet-in-the-habitable-zone-140-light-years-away-14042740.html" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://www.nature.com/oscar-static/images/favicons/nature/favicon-48x48-b52890008c.png" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Globaalne</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">EWS::WT1 isoformide sõltuv reguleerimine neogeneesides desmoplastilistes väikestes ümarates rakkude kasvajates</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Uuringus uuriti desmoplastiliste väikeste ümarate rakkude kasvajate (DSRCT) spetsiifiliste neogeneeside (DSRCT_NG) ekspressiooni ja reguleerimist, kasutades andmeid patsientidelt, PDX-ilt ja rakuliinidelt. Leiti, et EWS::WT1 fusion valgul on oluline roll DSRCT_NG ekspressiooni juhtimisel, eriti E–KTS isoformi puhul. Uuringu tulemused näitavad, et DSRCT_NG-d võivad olla kasulikud biomarkerid ja terapeutilised sihtmärgid.</p>
+            <a href="https://www.nature.com/articles/s42003-026-11068-0?error=cookies_not_supported&code=0cfa39a8-e5e3-44d5-af33-b51e54232350" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://www.southampton.ac.uk/leaf_content/uploads/black_hole_in_a_far-off_galaxy-(1).jpg" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Kodanikuteadlased aitavad leida tuhandeid galaktilisi musti auke</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Mustade aukude jahipidamise projekti eksperdid väidavad, et meie galaktikas võib peituda tuhandeid musti auke. Kosmilisi detektiive kutsutakse appi.</p>
-                <a href="https://www.miragenews.com/citizen-scientists-help-find-thousands-of-1753500/" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://www.nature.com/oscar-static/images/favicons/nature/favicon-48x48-b52890008c.png" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Globaalne</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">SentiGraphRec: tunde tajumise üksuse graafik isikupäraste uudiste soovitamiseks</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Digitaalses ajastul on täpne uudiste soovitamine oluline kasutaja kaasatuse parandamiseks ja tõhusa teabe edastamise toetamiseks. SentiGraphRec on sentimente arvestav üksuse graafiku mudel isikupäraste uudiste soovitamiseks, mis ühendab semantilised suhted, struktuursed ühendused ja üksuse tasemel tundeinfo. Mudel näitab märkimisväärseid parandusi soovituste täpsuses ja mitmekesisuses, kinnitades sentimentide arvestamise tõhusust isikupäraste uudiste soovitamisel.</p>
+            <a href="https://www.nature.com/articles/s41598-026-73911-y?error=cookies_not_supported&code=084f9097-dba8-4c32-8889-11762bca7c17" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://assets.technologynetworks.com/production/dynamic/images/content/417008/pyrimidine-nucleoside-phosphorylase-shibaura-institute-of-technology-640x360.jpg?cb=20261001" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">PyNP kuju mõjutab ligandi retentsiooni ja seondumist</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Molekulaarsed simulatsioonid näitavad, et PyNP kuju mõjutab ligandi retentsiooni ja suhkru eelistust, pakkudes sellega sisendit ravimite kavandamiseks ja biokatalüütilise sünteesi jaoks.</p>
-                <a href="https://www.technologynetworks.com/tn/news/a-moving-enzyme-pocket-changes-how-molecules-stay-bound-417008" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://www.nature.com/oscar-static/images/favicons/nature/favicon-48x48-b52890008c.png" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Aasia</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Uurimus hädaolukorra ressursside mitmeotstarbelise ajakava optimeerimisest simuleeritud kuumutamise algoritmi abil</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Uuringus pakutakse välja mitmeotstarbeline ressursside ajakava mudel, mis põhineb reaalsetel haiglaandmetel ja optimeeritakse simuleeritud kuumutamise (SA) algoritmi abil. Mudel integreerib mitu ressurssi (arstid, konsultatsiooniruumid, voodid) ning eesmärk on minimeerida kaalutud ooteaega ja tööjõukulu vastavalt triaaži prioriteedile ja maksimaalse ooteaja piirangutele. Simulatsioon näitas, et SA-optimeeritud ajakavad vähendasid ooteaega keskmiselt 20-35% võrra ja tasakaalustasid ressursside kasutamist erinevates olukordades.</p>
+            <a href="https://www.nature.com/articles/s41598-026-72989-8?error=cookies_not_supported&code=54bb0817-e72e-4f7f-9c2b-272b65539695" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://www.nature.com/oscar-static/images/favicons/nature/favicon-48x48-b52890008c.png" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Pinge juhtimise struktuurne alus osaliselt aktiveeritud K+ kanalis</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Uurimaks pinge aktiveerimise protsessi Kv kanalites, määrati Shaker kanali ILT mutandi (V369I, I372L, S376T) külmutatud-EM struktuur, mis osaliselt lahutab pingeanduri liikumise ja poori avamise. Struktuur näitab vaheetappi, kus pingeandur on osaliselt aktiveeritud, samal ajal kui poori värav on suletud. Arvutusmudelite ja molekulaardünaamika simulatsioonide abil näidatakse, kuidas pingeanduri aktiveerimine edastatakse poori läbi.</p>
-                <a href="https://www.nature.com/articles/s41467-026-78089-5?error=cookies_not_supported&code=7d36f441-c5c2-462e-b1b8-8e7ba6eefa5d" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://petapixel.com/assets/uploads/2026/10/Dr-Ning-Xu-AI-Investigation.jpg" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Globaalne</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Nikon uurib uuesti Small World in Motion võitjat pärast AI süüdistust</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Nikon Small World in Motion võistluse võitja on uurimise all pärast seda, kui teadlased süüdistasid Dr Ning Xu'd AI kasutamises tema videos.</p>
+            <a href="https://petapixel.com/2026/10/01/nikon-re-reviewing-winner-of-small-world-in-motion-contest-after-ai-accusation/" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://www.astronomy.com/wp-content/uploads/2026/09/DC-2.jpg?resize=1200,630" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Täna, neljapäeval, 1. oktoobril: Perseuse topeltklastrid</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Täna õhtul saab nautida kahekordset vaatemängu, kui Perseuse loodenurgas säravad topeltklastrid, valmis laiatarbe või lähivaatluse jaoks.</p>
-                <a href="https://www.astronomy.com/observing/the-sky-today-thursday-october-1-2026/" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://images.moneycontrol.com/static-mcnews/2026/10/20261001083918_NASAA.png" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Globaalne</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">NASA uus kosmosematerjal võimaldaks astronautidel valmistada tööriistu Kuu tolmust ja jäätmetest</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">NASA eksperimentaalne materjal ühendab bakterite poolt toodetud plastiku Kuu või Marsi tolmuga, võimaldades tulevastele meeskondadele valmistada ja parandada varustust ilma ootamata tarneid Maalt.</p>
+            <a href="https://www.moneycontrol.com/news/trends/nasa-s-new-space-material-could-let-astronauts-make-tools-from-moon-dust-and-waste-14042768.html" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         </div></section>
-    <section class="mb-20">
-        <h2 class="text-5xl font-bold text-gray-900 mb-10 pb-4 border-b-2 border-pink-200">Kunst, Autod ja Kellad</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+    <section class="mb-28">
+        <div class="flex items-center mb-12">
+            <h2 class="text-5xl md:text-6xl font-bold text-gray-900 italic pr-6">Kunst, Autod ja Kellad</h2>
+            <div class="flex-grow border-t-2 border-blush"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-16">
     
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://www.thenorthernecho.co.uk/resources/images/21523661.jpg?type=og-image" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Moodustudentide toetus Teesside'i hospitsi fondikogumisele</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Põhja-Kunstikolledži tudengid muutsid annetatud rõivad jätkusuutlikeks moelavakollektsioonideks Teesside'i hospitsi heategevuslikul moeüritusel 26. septembril.</p>
-                <a href="https://www.thenorthernecho.co.uk/news/26596706.fashion-students-support-teesside-hospice-fundraiser/" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://cassette.sphdigital.com.sg/image/straitstimes/0d9bd689fa54aa2883ee964cd8d731fd0fa11ef650e0f1dc8c39efb09c29f83d" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Aasia</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Singapuri kunstimuuseumi uus näitus näeb nelja kuu pärast avamist täiesti erinev välja</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Singapuri kunstimuuseumi uus näitus tutvustab muutuvat väljapanekut, mis näitab nende kollektsiooni ilma kindla teemata, kutsudes külastajaid kaasa mõtlema ja uusi tähendusi tõlgendama. Lisainfo straitstimes.com lehel.</p>
+            <a href="https://www.straitstimes.com/life/arts/singapore-art-museums-new-show-will-look-completely-different-four-months-after-opening" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://www.bainbridgereview.com/wp-content/uploads/sites/2/2026/10/42994173_web1_Gabriel-Zea_headshot.jpg?w=1024" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">BIMA kuulutab välja 2026. aasta BRAVA auhinna saajad</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Bainbridge Islandi Kunstimuuseum on teatanud 2026. aasta BRAVA auhinna saajatest: Gabriel Zea, Ryan Feddersen, Inge Bruggeman ja Priscilla Dobler Dzul. Neli kunstnikku valiti välja sadade kandidaatide hulgast nende kunstilise tipptaseme, tehniliste oskuste ja panuse tõttu kunstikogukonda.</p>
-                <a href="https://www.bainbridgereview.com/2026/10/01/bima-announces-2026-brava-award-recipients/" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://www.thenorthernecho.co.uk/resources/images/21523661.jpg?type=og-image" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Euroopa</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Moodi õppivad tudengid toetavad Teesside'i hospitsi fondikogumist</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Põhja-Kunstikolledži tudengid muutsid annetatud rõivad jätkusuutlikeks moelavakollektsioonideks Teesside'i hospitsi heategevuslikul moeüritusel 26. septembril.</p>
+            <a href="https://www.thenorthernecho.co.uk/news/26596706.fashion-students-support-teesside-hospice-fundraiser/" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://assets.telegraphindia.com/telegraph/2026/Oct/1790842704_new-project-2026-10-01t140435-221.jpg" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Kashi Bose Lane naaseb elu juurte juurde teemaga „Aadim“ Durga Puja jaoks 2026.</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">2026. aasta teema ammutab inspiratsiooni Warli kunstist, et uurida inimeste, looduse ja igapäevaelu vahelist suhet.</p>
-                <a href="https://www.telegraphindia.com/my-kolkata/durga-puja-special/kashi-bose-lane-durga-puja-2026-explores-life-through-warli-art-with-aadim-theme/cid/2182590" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://www.bainbridgereview.com/wp-content/uploads/sites/2/2026/10/42994173_web1_Gabriel-Zea_headshot.jpg?w=1024" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Põhja-Ameerika</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">BIMA kuulutab välja 2026. aasta BRAVA auhinna saajad</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Bainbridge'i saare kunstimuuseum on teatanud 2026. aasta BRAVA auhinna saajatest: Gabriel Zea, Ryan Feddersen, Inge Bruggeman ja Priscilla Dobler Dzul. Need neli kunstnikku valiti välja sadade kandidaatide hulgast nende kunstilise tipptaseme, tehniliste oskuste ja panuse tõttu kunstikogukonda.</p>
+            <a href="https://www.bainbridgereview.com/2026/10/01/bima-announces-2026-brava-award-recipients/" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://apicms.thestar.com.my/uploads/images/2026/10/01/4139297.jpg" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Sunway Medical Centre Damansara ametlikult avatud, et tõsta Selangori tervishoiuteenuste taset</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Sunway Healthcare Groupi alla kuuluv tänapäevane tertsiaarhaigla Sunway Medical Centre Damansara (SMCD) on ametlikult avatud, et paremini teenindada Malaisia kasvavaid tervishoiuvajadusi.</p>
-                <a href="https://www.thestar.com.my/news/nation/2026/10/01/sunway-medical-centre-damansara-officially-launched-to-boost-selangor-healthcare" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://assets.telegraphindia.com/telegraph/2026/Oct/1790842704_new-project-2026-10-01t140435-221.jpg" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Aasia</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Kashi Bose Lane naaseb elu juurte juurde teemaga „Aadim“ Durga Puja jaoks 2026</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">2026. aasta teema ammutab inspiratsiooni Warli kunstist, et uurida inimeste, looduse ja igapäevaelu vahelist suhet.</p>
+            <a href="https://www.telegraphindia.com/my-kolkata/durga-puja-special/kashi-bose-lane-durga-puja-2026-explores-life-through-warli-art-with-aadim-theme/cid/2182590" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://www.newsx.com/wp-content/uploads/2026/10/Kicky-amp-Perky-Presents-Pietra-The-Art-of-Colour-Stones.avif" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Kicky & Perky esitleb Pietra: Värvikivide kunst minimalistlikes ehetes</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Kaasaegne ehtekollektsioon, mis ühendab erksad vääriskivid, tagasihoidlikud siluetid ja igapäevase elegantsi. Delhi naiste jaoks võib olla huvitav võtta need marsruudid üksi...</p>
-                <a href="https://www.newsx.com/business-2/kicky-perky-presents-pietra-the-art-of-colour-stones-in-minimalist-jewellery-278093/" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://apicms.thestar.com.my/uploads/images/2026/10/01/4139297.jpg" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Aasia</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Sunway Medical Centre Damansara ametlikult avatud, et tõsta Selangori tervishoiuteenuseid</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Sunway Healthcare Groupi alla kuuluv tänapäevane tertsiaarne haigla Sunway Medical Centre Damansara (SMCD) on ametlikult avatud, et paremini teenindada Malaisia kasvavaid tervishoiuvajadusi.</p>
+            <a href="https://www.thestar.com.my/news/nation/2026/10/01/sunway-medical-centre-damansara-officially-launched-to-boost-selangor-healthcare" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://www.thenationalnews.com/resizer/v2/DVDKZPV446ES6FU4GKDEPOG7LA.jpg?auth=3f26cd4dbcac7f76f61359d266278596e53968489f04e34b5b522e7f949528bc&focal=2799%2C1857&width=1200&height=630" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Al Qasimi palee: Ras Al Khaimahi suurejooneline "kummitav" maja</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Al Qasimi palee müüakse 23,5 miljoni dirhemi eest ning sellel on kunsti ja artefakte.</p>
-                <a href="https://www.thenationalnews.com/lifestyle/2026/10/01/al-qasimi-palace-inside-ras-al-khaimahs-grand-haunted-house/" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://www.newsx.com/wp-content/uploads/2026/10/Kicky-amp-Perky-Presents-Pietra-The-Art-of-Colour-Stones.avif" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Aasia</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Kicky & Perky esitleb Pietra: Värvikivide kunst minimalistlikes ehetes</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Kaasaegne ehtekollektsioon, mis ühendab erksad vääriskivid, tagasihoidlikud siluetid ja igapäevase elegantsi. Delhi naiste jaoks huvitav artikkel, mis arutleb selle üle, kas nad julgeksid üksi neid teid mööda käia...</p>
+            <a href="https://www.newsx.com/business-2/kicky-perky-presents-pietra-the-art-of-colour-stones-in-minimalist-jewellery-278093/" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://i.cdn.newsbytesapp.com/images/l52320261001123259.jpeg" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Kuidas teha muda kangast kunsti paberile</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Aafrika muda kangast kunst on unikaalne ja ilus käsitöö, mille juured ulatuvad Lääne-Aafrika traditsioonidesse.</p>
-                <a href="https://www.newsbytesapp.com/news/lifestyle/learn-to-make-african-mudcloth-art-on-handmade-paper/story" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://www.thenationalnews.com/resizer/v2/DVDKZPV446ES6FU4GKDEPOG7LA.jpg?auth=3f26cd4dbcac7f76f61359d266278596e53968489f04e34b5b522e7f949528bc&focal=2799%2C1857&width=1200&height=630" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Aasia</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Al Qasimi palee: Ras Al Khaimahi suurejooneline "õudne" maja seestpoolt</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Al Qasimi palee on müügil 23,5 miljoni dirhami eest ning sisaldab kunsti ja artefakte. Maja on tuntud kui "õudne" ning on üks Ras Al Khaimahi silmapaistvamaid hooneid.</p>
+            <a href="https://www.thenationalnews.com/lifestyle/2026/10/01/al-qasimi-palace-inside-ras-al-khaimahs-grand-haunted-house/" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         
-        <article class="bg-white rounded-lg shadow hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col border border-gray-200">
-            <img src="https://static.invenglobal.com/upload/image/2026/10/01/r1790836698992638.jpeg" alt="Uudise pilt" class="w-full h-52 object-cover">
-            <div class="p-6 flex-1 flex flex-col">
-                <h3 class="text-2xl font-bold text-gray-900 mb-4 leading-snug">Sonic the Hedgehog saab muuseumi kohtlemise 35-aastaselt</h3>
-                <p class="text-gray-900 text-base mb-6 flex-1">Möödunud nädalavahetusel toimus ARK/8-s Sonicu kunstinäitus "35 aastat kiirust", kus DJ mängis muusikat ja külastajad said nautida Sonicu kunstiteoseid. Uudis on InvenGlobali reporteri John Popko poolt kajastatud.</p>
-                <a href="https://www.invenglobal.com/articles/26714/sonic-the-hedgehog-gets-the-museum-treatment-at-35" target="_blank" class="text-pink-600 font-bold text-sm hover:text-pink-800 transition-colors uppercase tracking-widest inline-flex items-center mt-auto">
-                    Loe originaali &rarr;
-                </a>
+        <article class="flex flex-col group">
+            <div class="overflow-hidden mb-5">
+                <img src="https://i.cdn.newsbytesapp.com/images/l52320261001123259.jpeg" alt="Uudise pilt" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-700 ease-in-out">
             </div>
+            <span class="text-blush font-bold text-xs tracking-[0.2em] uppercase mb-3 block">Aafrika</span>
+            <h3 class="text-3xl font-bold text-gray-900 mb-4 leading-tight group-hover:text-gray-600 transition-colors duration-300">Kuidas teha savikangast kunsti paberil</h3>
+            <p class="text-gray-700 text-lg mb-6 font-light leading-relaxed flex-grow">Aafrika savikangas on ainulaadne ja kaunis käsitöö, mille juured ulatuvad Lääne-Aafrika traditsioonidesse. Savikangas on traditsiooniline tekstiilikunst, mida kasutatakse sageli rõivaste ja kodukaunistuste valmistamisel ning selle kunsti õppimine võib olla põnev ja loov väljakutse.</p>
+            <a href="https://www.newsbytesapp.com/news/lifestyle/learn-to-make-african-mudcloth-art-on-handmade-paper/story" target="_blank" class="text-blush font-bold text-sm tracking-[0.2em] uppercase hover:text-pink-800 transition-colors inline-flex items-center mt-auto pb-2 border-b border-transparent hover:border-pink-800 w-max">
+                Loe originaali &rarr;
+            </a>
         </article>
         </div></section>
     </main>
-    <footer class="bg-gray-900 py-16 text-center mt-20">
-        <h2 class="text-5xl font-bold text-white mb-6 serif tracking-widest uppercase">ELYNE</h2>
-        <p class="text-gray-400 font-light">See leht uueneb igal hommikul automaatselt tehisintellekti abil.</p>
+    <footer class="bg-gray-900 pt-32 pb-20 px-4 text-center mt-32">
+        <h2 class="text-7xl md:text-[12rem] font-black text-white mb-8 magazine-font tracking-tighter uppercase leading-none opacity-90">Elyne</h2>
+        <div class="w-24 h-1 bg-blush mx-auto mb-8"></div>
+        <p class="text-gray-400 font-light text-lg tracking-widest uppercase">Tehisintellekti kureeritud globaalne ülevaade</p>
     </footer>
 </body>
 </html>
