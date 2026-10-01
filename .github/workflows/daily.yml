@@ -1,0 +1,38 @@
+name: Uuenda uudiseid
+
+on:
+  schedule:
+    - cron: '0 5 * * *' # Käivitub iga päev kell 05:00 (UTC)
+  workflow_dispatch: # Lubab meil seda ka nupust käivitada
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Kopeeri kood
+        uses: actions/checkout@v3
+
+      - name: Paigalda Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Paigalda vajalikud teegid
+        run: pip install requests openai
+
+      - name: Käivita robot (update_news.py)
+        env:
+          GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python update_news.py
+
+      - name: Salvesta uus HTML GitHubi
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add index.html
+          git commit -m "Automaatne uudiste uuendus" || exit 0
+          git push
