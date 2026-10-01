@@ -28,6 +28,7 @@ try:
         url = f"https://gnews.io/api/v4/top-headlines?category=general&lang=en&max=5&apikey={GNEWS_KEY}"
         response = requests.get(url)
         news_data = response.json()
+        print("GNEWSI VASTUS ON:", news_data)
         
         # 3. Vaatame, kas saime artiklid või veateate
         if "articles" in news_data:
