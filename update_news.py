@@ -208,4 +208,5 @@ html += """
 with open("index.html", "w", encoding="utf-8") as f:
     f.write(html)
 
+
 print("Kõik 24 unikaalset uudist on valmis ja salvestatud!")
