@@ -104,7 +104,7 @@ html = f"""
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minu Uudisteleht</title>
+    <title>Lihtsalt üks valik uudiseid</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
@@ -131,11 +131,11 @@ html = f"""
 
     <header class="max-w-7xl mx-auto mb-16 brutal-card p-8 md:p-12 bg-yellow-50">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 border-b-4 border-black pb-4">
-            <h1 class="text-7xl md:text-9xl font-marquee uppercase leading-none">Minu Uudised</h1>
+            <h1 class="text-7xl md:text-9xl font-marquee uppercase leading-none">Lihtsalt üks valik uudiseid</h1>
             <div class="text-2xl font-black mt-4 md:mt-0 font-marquee">{kuupaev_tekst}</div>
         </div>
         <p class="text-lg md:text-xl font-medium leading-relaxed max-w-4xl">
-            Ma eriti ei loe uudiseid ja olemasolevate uudisteportaaline ning ajalehtede uudiste valik tundus mulle liiga kallutatud.. seega mõtlesin, et vaib-koudin endale oma isikliku uudistesaidi, mis iga päev kogub kokku maailmast 24 erinevat uudist. Ja ise valin teemad endale! Et küll ma siis alles hakkan lugema. Aga vaib-koodisin valmis ja tuli välja, et ma lihtsalt ei viitsi uudiseid lugeda ☹ Kuni ma välja mõtlen, mis edasi teha, jookseb see leht siin edasi.. iga päev, 24 uudist maailmas, minu valitud teemadel.
+            Ma ei satu eriti uudiseid lugema.. seega mõtlesin, et vaib-koodin endale oma isikliku uudistesaidi, mis iga päev kogub kokku maailmast 24 erinevat uudist. Ja ise valin teemad endale! <br>Et küll ma siis alles hakkan lugema. <br>Aga vaib-koodisin valmis ja tuli välja, et ma lihtsalt ei viitsi uudiseid lugeda ☹ <br>Kuni ma välja mõtlen, mis edasi teha, jookseb see leht siin edasi.. iga päev, 24 uudist maailmas, minu valitud teemadel.
         </p>
     </header>
 
