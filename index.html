@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lihtsalt üks valik uudiseid</title>
+    <title>Lihtsalt valik uudiseid</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
@@ -31,11 +31,11 @@
 
     <header class="max-w-7xl mx-auto mb-16 brutal-card p-8 md:p-12 bg-yellow-50">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 border-b-4 border-black pb-4">
-            <h1 class="text-7xl md:text-9xl font-marquee uppercase leading-none">Lihtsalt üks valik uudiseid</h1>
+            <h1 class="text-7xl md:text-9xl font-marquee uppercase leading-none">Lihtsalt valik uudiseid</h1>
             <div class="text-2xl font-black mt-4 md:mt-0 font-marquee">2. oktoober 2026</div>
         </div>
         <p class="text-lg md:text-xl font-medium leading-relaxed max-w-4xl">
-            Ma ei satu eriti uudiseid lugema.. seega mõtlesin, et vaib-koodin endale oma isikliku uudistesaidi, mis iga päev kogub kokku maailmast 24 erinevat uudist. Ja ise valin teemad endale! <br>Et küll ma siis alles hakkan lugema. <br>Aga vaib-koodisin valmis ja tuli välja, et ma lihtsalt ei viitsi uudiseid lugeda ☹ <br>Kuni ma välja mõtlen, mis edasi teha, jookseb see leht siin edasi.. iga päev, 24 uudist maailmas, minu valitud teemadel.
+            Ma eriti ei loe uudiseid, aga mõtlesin, et kui ma ise vaib-koodin endale oma isikliku uudistesaidi, mis iga päev kogub kokku maailmast 24 erinevat uudist.. Ja ise valin teemad endale! Et küll ma siis alles hakkan lugema. Aga vaib-koodisin valmis ja tuli välja, et ma lihtsalt ei viitsi uudiseid lugeda ☹ Kuni ma välja mõtlen, mis edasi teha, jookseb see leht siin edasi.. iga päev, 24 uudist maailmas, minu valitud teemadel.
         </p>
     </header>
 
@@ -43,7 +43,24 @@
 
         <article class="brutal-card flex flex-col">
             <div class="border-b-4 border-black relative">
-                <img src="https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB" alt="Pilt" class="w-full h-56 object-cover bg-white">
+                <img src="https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
+                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 6/10</div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Päevakajalised</span>
+                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Euroopa</span>
+                </div>
+                <a href="https://sport.err.ee/1610154778/noormeeste-jalgpallikoondis-viigistas-armeenia-eakaaslastega" target="_blank" class="hover:text-pink-600 transition-colors">
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Noormeeste jalgpallikoondis viigistas Armeenia eakaaslastega</h2>
+                </a>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Eesti U-19 jalgpallikoondis viigistas Armeenia eakaaslastega esimeses maavõistlusmängus. Mäng toimus Armeenias ning oli osa noormeeste ettevalmistusest tulevasteks rahvusvahelisteks turniirideks. Tulemus näitab meeskonna head vormi ja võimekust.</p>
+            </div>
+        </article>
+    
+        <article class="brutal-card flex flex-col">
+            <div class="border-b-4 border-black relative">
+                <img src="https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
                 <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
@@ -51,152 +68,135 @@
                     <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Päevakajalised</span>
                     <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Euroopa</span>
                 </div>
-                <a href="https://sport.err.ee/1610154730/duplantis-jatab-sisehooaja-vahele" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Duplantis jätab sisehooaja vahele</h2>
+                <a href="https://www.err.ee/1610154773/tekstiilijaatmete-kokku-kogumine-on-ulejargmisest-aastast-tootja-vastutus" target="_blank" class="hover:text-pink-600 transition-colors">
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Tekstiilijäätmete kokku kogumine on ülejärgmisest aastast tootja vastutus</h2>
                 </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Rootsi teivashüppekuulsus Armand Duplantis otsustas järgmise aasta sisehooajal võistlemisest loobuda. Duplantis on üks maailma parimaid teivashüppajaid ning tema otsus võib mõjutada ka teisi tippsportlasi. Kuigi otsus võib pettumust valmistada fännidele, on sportlaste tervis alati esmatähtis.</p>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Alates ülejärgmisest aastast hakkavad tekstiilijäätmete kokku kogumise ja käitlemise kulusid kandma tootjad. See on oluline samm jätkusuutlikuma tekstiilitööstuse suunas ning aitab vähendada keskkonnakahju. Muudatus mõjutab Euroopa tekstiilitööstust laiemalt.</p>
             </div>
         </article>
     
         <article class="brutal-card flex flex-col">
             <div class="border-b-4 border-black relative">
-                <img src="https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB" alt="Pilt" class="w-full h-56 object-cover bg-white">
-                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 6/10</div>
+                <img src="https://www.nzherald.co.nz/resizer/v2/RXGAYTIJZNC7HJ4A43ZTXLHYDM.jpg?auth=10be1e5c7fb8f94cb7b292dbf1e65933fb4df0b46362e78939d1e85fbd5805fa&width=1200&height=675&quality=70&focal=1110%2C598&smart=false" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
+                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
                 <div class="flex flex-wrap gap-2 mb-4">
                     <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Päevakajalised</span>
-                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Eesti</span>
+                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Aasia</span>
                 </div>
-                <a href="https://kultuur.err.ee/1610154619/galerii-siim-kallase-raamatu-raha-poliitika-ja-meie-esitlus" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Siim Kallase raamatu "Raha, poliitika ja meie" esitlus</h2>
+                <a href="https://www.nzherald.co.nz/sport/cricket/sir-richard-hadlee-slams-nz-cricket-in-letter-to-chief-executive-and-board-i-am-embarrassed-to-have-my-personal-name-attached-to-the-organisation/premium/C5FMAKCUCBAC3LP5U66N7DUIVY/" target="_blank" class="hover:text-pink-600 transition-colors">
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Sir Richard Hadlee kritiseerib Uus-Meremaa kriketiliitu kirjas tegevjuhile ja juhatusele: 'Mul on piinlik, et minu nimi on seotud selle organisatsiooniga'</h2>
                 </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Tallinna Viru keskuse Rahva Raamatus esitleti Siim Kallase uut raamatut "Raha, poliitika ja meie", mis keskendub raha ja poliitika seostele Eestis. Raamat ilmus sarjas "Eesti mõttelugu" ning tõi kokku huvilisi ja raamatusõpru.</p>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Uudis räägib sellest, kuidas Sir Richard Hadlee on saanud Uus-Meremaa kriketiliidule saadetud kirjas teravalt kriitiline ning väljendab häbi seoses organisatsiooniga seotud olemisega. Ta kutsub juhatust üles endasse vaatama ja kaaluma muudatusi.</p>
             </div>
         </article>
     
         <article class="brutal-card flex flex-col">
             <div class="border-b-4 border-black relative">
-                <img src="https://pagesix.com/wp-content/uploads/sites/3/2026/10/143381447.jpg?quality=75&strip=all&w=1200" alt="Pilt" class="w-full h-56 object-cover bg-white">
-                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 6/10</div>
+                <img src="https://apicms.thestar.com.my/uploads/images/2026/10/02/4140579.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
+                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
                 <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Päevakajalised</span>
+                    <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Majandus</span>
+                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Aasia</span>
+                </div>
+                <a href="https://www.thestar.com.my/business/business-news/2026/10/02/fitch-genting-genting-malaysia-face-challenging-deleveraging-path" target="_blank" class="hover:text-pink-600 transition-colors">
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Fitch: Genting, Genting Malaysia seisavad silmitsi keerulise võlakoorma vähendamise teega</h2>
+                </a>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Fitch Ratingsi sõnul seisavad Genting Bhd ja Genting Malaysia Bhd silmitsi keerulise võlakoorma vähendamise teega, kuna suured laienemiskulud ja aeglasem kasumi kasv hoiavad võlakoormuse kõrgel tasemel.</p>
+            </div>
+        </article>
+    
+        <article class="brutal-card flex flex-col">
+            <div class="border-b-4 border-black relative">
+                <img src="https://g.foolcdn.com/image/?url=https%3A%2F%2Fcdn.content.foolcdn.com%2Fimages%2F1umn9qeh%2Fproduction%2F75a1b1ee04c08d67cab6b14a0bed90f25076f783-3840x2160.jpg%3Fw%3D800%26q%3D75%26fit%3Dmax%26auto%3Dformat&w=1200&op=resize" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
+                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Majandus</span>
+                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Globaalne</span>
+                </div>
+                <a href="https://www.fool.com/investing/2026/10/01/tesla-is-the-only-magnificent-seven-stock-in-the-red-for-2026/" target="_blank" class="hover:text-pink-600 transition-colors">
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Tesla on ainus Magnificent Seven aktsia, mis on 2026. aastal miinuses</h2>
+                </a>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Elektriautode tootja Tesla müüb kiiremini kui enamik tema suurnimega konkurente, kuid aktsiat mõjutab siiski negatiivne surve.</p>
+            </div>
+        </article>
+    
+        <article class="brutal-card flex flex-col">
+            <div class="border-b-4 border-black relative">
+                <img src="https://www.investors.com/wp-content/uploads/2024/06/marketdiem_elonmusk.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
+                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Majandus</span>
                     <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Põhja-Ameerika</span>
                 </div>
-                <a href="https://pagesix.com/2026/10/01/celebrity-news/gypsy-rose-blanchards-fiance-ken-urker-dead-at-33/" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Gypsy Rose Blanchardi kihlatu Ken Urker surnud 33-aastaselt</h2>
+                <a href="https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-treasury-yields-yields-tumble-micron-tesla-jobs-report-due/" target="_blank" class="hover:text-pink-600 transition-colors">
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Dow Jones Futures: Aktsiad tõusevad toetuspunktide lähedalt, kui tootlused langevad, Micron ostuala; Tesla, töökohtade aruanne oodatakse</h2>
                 </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Gypsy Rose Blanchardi kihlatu, Ken Urker, on surnud 33-aastaselt.</p>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Dow Jonesi futuurid: Aktsiaturg tõusis veidi olulistelt tasemetelt koos Microni, Lumentumi lähedal asuvate ostupunktidega. Tesla tarned, töökohtade aruanne on ees ootamas.</p>
             </div>
         </article>
     
         <article class="brutal-card flex flex-col">
             <div class="border-b-4 border-black relative">
-                <img src="https://cdn-cabinet.ua.news/uploads/images/interpol_poperedyv_pro_pryskorennia_kibe_1790905455664.webp" alt="Pilt" class="w-full h-56 object-cover bg-white">
+                <img src="https://static.toiimg.com/thumb/msid-134630708,width-1280,height-720,resizemode-6,overlay-toi_sw,pt-32,y_pad-600/photo.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
                 <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
                 <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Majandus</span>
-                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Globaalne</span>
+                    <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">(Geo)poliitika</span>
+                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Põhja-Ameerika</span>
                 </div>
-                <a href="https://ua.news/en/technologies/interpol-poperediv-pro-priskorennia-kibershakhraistva-cherez-shi-cnbc" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Interpol hoiatab, et tehisintellekt kiirendab küberrünnakuid</h2>
+                <a href="https://timesofindia.indiatimes.com/world/us/cornell-sexual-assault-case-snapchat-records-police-transcript-prompt-fresh-probe/articleshow/134630683.cms" target="_blank" class="hover:text-pink-600 transition-colors">
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Cornell seksuaalse rünnaku juhtum: Snapchati salvestised, politsei protokoll käivitavad uue uurimise</h2>
                 </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Interpol teatab, et tehisintellekt muudab küberrünnakud kiiremaks, ulatuslikumaks ja raskemini avastatavaks, samal ajal kui agentne tehisintellekt võib luua info- ja füüsilisi riske.</p>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">2024. aastal toimunud seksuaalse rünnaku ajal vahetatud Snapchati sõnumid sisaldasid fotot tollasest üliõpilasest Jane Doest Chi Phi majas. Uurimine on käivitatud politsei protokolli ja Snapchati salvestiste põhjal.</p>
             </div>
         </article>
     
         <article class="brutal-card flex flex-col">
             <div class="border-b-4 border-black relative">
-                <img src="https://live.euronext.com/favicon.ico" alt="Pilt" class="w-full h-56 object-cover bg-white">
+                <img src="https://asianews.network/wp-content/uploads/2026/10/Untitled-1-1.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
                 <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
-            </div>
-            <div class="p-6 flex flex-col flex-grow">
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Majandus</span>
-                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Globaalne</span>
-                </div>
-                <a href="https://live.euronext.com/en/financial-news/dollar-17-month-high-global-bond-rout-hits-euro" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Dollar tõusis 17 kuu kõrgele, kui globaalne võlakirjaturg tabas eurot</h2>
-                </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">USA dollar tõusis kolmandat nädalat järjest, olles 17 kuu kõrgel, kuna võlakirjaturu langus tõstis laenamiskulusid üle maailma mitme aastakümne kõrgustele inflatsioonihirmude tõttu kõrgemate naftahindade tõttu.</p>
-            </div>
-        </article>
-    
-        <article class="brutal-card flex flex-col">
-            <div class="border-b-4 border-black relative">
-                <img src="https://www.reuters.com/resizer/v2/YBHDI4RKHRNBFHBYZOOADI33K4.jpg?auth=0954ea4588045ab4ab1cc439016d7a3b4899f1c369363b09f001a990888865b9&height=1005&width=1920&quality=80&smart=true" alt="Pilt" class="w-full h-56 object-cover bg-white">
-                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
-            </div>
-            <div class="p-6 flex flex-col flex-grow">
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Majandus</span>
-                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Euroopa</span>
-                </div>
-                <a href="https://www.reuters.com/world/asia-pacific/dollar-17-month-high-global-bond-rout-hits-euro-2026-10-02/" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Dollar tõusis 17-kuulisele tipule, kui võlaturul valitses paanika ja Prantsusmaa eelarve mured mõjutasid eurot</h2>
-                </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">USA dollar tõusis kolmandat nädalat järjest, samal ajal kui võlaturg koges paanikat inflatsioonihirmude tõttu kõrgemate naftahindade ja Prantsusmaa eelarve tervisega seotud murede tõttu hoidis euro end 17 kuu madalaimal tasemel.</p>
-            </div>
-        </article>
-    
-        <article class="brutal-card flex flex-col">
-            <div class="border-b-4 border-black relative">
-                <img src="https://cassette.sphdigital.com.sg/image/stomp/fc02bc254c2d2cdb1f9eabfb7c4de8fa6093ec9b78e4566a7666590f9e35ef77?w=1200" alt="Pilt" class="w-full h-56 object-cover bg-white">
-                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 6/10</div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
                 <div class="flex flex-wrap gap-2 mb-4">
                     <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">(Geo)poliitika</span>
                     <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Aasia</span>
                 </div>
-                <a href="https://www.stomp.sg/trending-now/firefighters-find-charging-sex-toy-after-mattress-catches-fire-home" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Vooditoas põhjustas tulekahju laadija kasutamisel olnud sekslelu</h2>
+                <a href="https://asianews.network/death-of-indonesian-recruited-by-russian-military-leaves-family-bereft/" target="_blank" class="hover:text-pink-600 transition-colors">
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Indoneesia kodaniku surm Venemaa sõjaväes jätab pere leinama</h2>
                 </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Melakas kustutati tulekahju, mille arvatakse olevat põhjustatud laadimisel olnud sekslelust, ilma et oleks teatatud vigastustest.</p>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Indoneesia suursaadik Venemaal ja Valgevenes Jose Antonio Morato Tavares teatas, et Indoneesia saatkond Moskvas on saanud kümneid teateid peredelt, kelle liikmed väidetavalt värvati võitlema Venemaa eest pärast kõrgete palkade lubamist.</p>
             </div>
         </article>
     
         <article class="brutal-card flex flex-col">
             <div class="border-b-4 border-black relative">
-                <img src="https://www.aljazeera.com/wp-content/uploads/2026/10/afp_6abee4d8115c-1790895320.jpg?resize=1920%2C1440" alt="Pilt" class="w-full h-56 object-cover bg-white">
-                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
+                <img src="https://content.api.news/v3/images/bin/eab1b2caf49d3cf99f2f98153df4da48" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
+                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 9/10</div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
                 <div class="flex flex-wrap gap-2 mb-4">
                     <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">(Geo)poliitika</span>
                     <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Põhja-Ameerika</span>
                 </div>
-                <a href="https://www.aljazeera.com/news/2026/10/2/trump-launches-midterms-campaign-blitz-amidst-record-low-approval-ratings" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Trump alustab kampaaniat vahevalimiste eel rekordmadalate heakskiidu näitajate juures</h2>
+                <a href="https://www.news.com.au/lifestyle/real-life/news-life/frat-brothers-allegedly-joked-about-eightsome-during-brutal-cornell-gang-rape/news-story/b81f3614a7594946a2d6afa21d94b3f1" target="_blank" class="hover:text-pink-600 transition-colors">
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Cornelli jõuguvägistamise juhtum suunati suurde žüriisse pärast protesti</h2>
                 </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Trump korraldab kampaaniarallide seeria, et tõsta vabariiklaste võiduvõimalusi Iraani sõja ja kütusehindade tõusu tingimustes.</p>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Ivy League ülikooli ümber keerleb šokeeriv juhtum, kus üliõpilane väidab, et teda uimastati, hoiti vangis ja vägistati seitsme vennaskonna liikme poolt, samal ajal kui teised naljatasid "kaheksastikust" grupi tekstisõnumites.</p>
             </div>
         </article>
     
         <article class="brutal-card flex flex-col">
             <div class="border-b-4 border-black relative">
-                <img src="https://tvcnews.tv/wp-content/uploads/2026/10/lP_tJa1O.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white">
-                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
-            </div>
-            <div class="p-6 flex flex-col flex-grow">
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">(Geo)poliitika</span>
-                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Aafrika</span>
-                </div>
-                <a href="https://www.tvcnews.tv/somalilands-strategic-location-puts-it-at-centre-of-red-sea-security-debate/" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Somalilandi strateegiline asukoht seab selle Punase mere julgeoleku arutelu keskmesse</h2>
-                </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Somalilandi asukoht Adeni lahe ääres tõmbab üha enam tähelepanu, kui konflikt Jeemenis tekitab muret mereohutuse ja piirkonna stabiilsuse pärast.</p>
-            </div>
-        </article>
-    
-        <article class="brutal-card flex flex-col">
-            <div class="border-b-4 border-black relative">
-                <img src="https://static.independent.co.uk/2026/03/02/20/07/Breaking-News.avif?trim=0,0,0,0&width=1200&height=800&crop=1200:800" alt="Pilt" class="w-full h-56 object-cover bg-white">
+                <img src="https://cassette.sphdigital.com.sg/image/straitstimes/191be8020bb3c877c49682e8a769371fda3ec153fd382c9fbbc88d57c12c7134" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
                 <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
@@ -204,16 +204,16 @@
                     <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Haridus</span>
                     <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Põhja-Ameerika</span>
                 </div>
-                <a href="https://www.independent.co.uk/news/world/americas/cornell-rape-investigation-governor-letitia-james-b3060156.html" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">NY kuberner eemaldab kriitikat saanud ringkonnaprokuröri väidetava Cornelli jõugu vägistamise juhtumist ja nimetab Letitia Jamesi eriprokuröriks</h2>
+                <a href="https://www.straitstimes.com/world/united-states/new-york-attorney-general-named-special-prosecutor-in-cornell-rape-probe" target="_blank" class="hover:text-pink-600 transition-colors">
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">New York AG nimetati eriprokuröriks Cornelli vägistamisjuhtumis</h2>
                 </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Kümned üliõpilased kogunesid neljapäeval ülikooli foorumile, nõudes vastutust, kritiseerides ülikooli reageeringut vägistamissüüdistustele, mis hõlmavad vennaskonna liikmeid.</p>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">New Yorki prokurör Letitia James nimetas eriprokuröri uurima 2024. aasta Cornelli ülikooli tudengite grupivägistamise süüdistusi.</p>
             </div>
         </article>
     
         <article class="brutal-card flex flex-col">
             <div class="border-b-4 border-black relative">
-                <img src="https://thumb.spokesman.com/MQj2uI0vl45hd4WzDyEcDZkLUW4=/2400x1260/smart/media.spokesman.com/photos/2026/10/01/6abf1bf639b41.hires.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white">
+                <img src="https://cassette.sphdigital.com.sg/image/straitstimes/191be8020bb3c877c49682e8a769371fda3ec153fd382c9fbbc88d57c12c7134" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
                 <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
@@ -221,33 +221,33 @@
                     <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Haridus</span>
                     <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Põhja-Ameerika</span>
                 </div>
-                <a href="https://www.spokesman.com/stories/2026/oct/01/ny-ag-letitia-james-named-special-prosecutor-in-co/" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">NY AG Letitia James nimetati eriprokuröriks Cornell University jõuguvägistamise juhtumis, võtab üle kohaliku prokuröri rolli</h2>
+                <a href="https://www.straitstimes.com/world/new-york-attorney-general-named-special-prosecutor-in-cornell-rape-probe" target="_blank" class="hover:text-pink-600 transition-colors">
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">New Yorgi peaprokurör nimetati eriprokuröriks Cornelli vägistamise uurimises</h2>
                 </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">New Yorgi kuberner Kathy Hochul nimetas neljapäeval New Yorgi prokuröri Letitia Jamesi eriprokuröriks, et võtta üle väidetava naissoost jõuguvägistamise uurimine Cornell University vennaskonnas.</p>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">New Yorgi kuberner Kathy Hochul nimetas neljapäeval osariigi peaprokuröri Letitia Jamesi eriprokuröriks väidetava 2024. aasta Cornelli ülikooli tudengi rühmavägistamise juhtumis.</p>
             </div>
         </article>
     
         <article class="brutal-card flex flex-col">
             <div class="border-b-4 border-black relative">
-                <img src="https://th-i.thgim.com/public/incoming/wff19r/article71535642.ece/alternates/LANDSCAPE_1200/France_High_School_Protests_92616.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white">
-                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
+                <img src="https://www.europesays.com/wp-content/uploads/2026/10/henderson-classroom-1000x560.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
+                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 6/10</div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
                 <div class="flex flex-wrap gap-2 mb-4">
                     <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Haridus</span>
-                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Euroopa</span>
+                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Põhja-Ameerika</span>
                 </div>
-                <a href="https://www.thehindu.com/news/international/french-school-protests-spread-as-fires-blockades-deepen-unrest/article71535635.ece" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Prantsuse kooli protestid levivad, tulekahjud ja blokaadid süvendavad rahutusi</h2>
+                <a href="https://www.europesays.com/3284286/" target="_blank" class="hover:text-pink-600 transition-colors">
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Spordiprognooside turu parendamine: Loyola University Chicago</h2>
                 </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Prantsuse üliõpilaste protestid levivad üle riigi, kaasas blokaadid ja tulekahjud, sadu inimesi on kinni peetud ja kümneid vigastatud, samal ajal kui valitseb ülerahvastatus, puudujäägid ja poliitilised pinged enne valimisi.</p>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Noah Henderson õpetab spordihalduse kursust ning on tuntud ekspert ja analüütik prognoositurgudel ning kolledži nime, pildi ja sarnasuse küsimustes.</p>
             </div>
         </article>
     
         <article class="brutal-card flex flex-col">
             <div class="border-b-4 border-black relative">
-                <img src="https://mmx.prnewswire.com/media/MS2000722/Global-Elastomers-Market-Size.jpg?id=OA2982441&p=facebook" alt="Pilt" class="w-full h-56 object-cover bg-white">
+                <img src="https://mmx.prnewswire.com/media/MS2000722/Global-Elastomers-Market-Size.jpg?id=OA2982441&p=facebook" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
                 <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
@@ -256,15 +256,15 @@
                     <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Globaalne</span>
                 </div>
                 <a href="https://www.prnewswire.co.uk/news-releases/global-elastomers-market-set-for-steady-expansion-to-usd-149-19-billion-by-2034-as-automotive-tpe-and-sustainable-material-demand-rises-reports-maximize-market-research-302895960.html" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Globaalne elastomeeride turg laieneb stabiilselt 2034. aastaks 149,19 miljardi dollarini, kuna kasvab nõudlus autotööstuse, TPE ja jätkusuutlike materjalide järele, teatab Maximize Market Research</h2>
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Globaalne elastomeeride turg laieneb stabiilselt 149,19 miljardi dollarini aastaks 2034, kuna kasvab nõudlus autotööstuse, TPE ja jätkusuutlike materjalide järele, teatab Maximize Market Research</h2>
                 </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Globaalne elastomeeride turg kasvas 2025. aastal väärtusega 104,73 miljardit dollarit ja prognoositakse kasvavat 4,01% aastase kasvumääraga kuni 2034. aastani, ulatudes...</p>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Globaalne elastomeeride turg väärtusega 104,73 miljardit dollarit aastal 2025 ja kasvab prognoositavalt 4,01% aastatel 2026 kuni 2034. Kasvav nõudlus autotööstuse, TPE ja jätkusuutlike materjalide järele on peamised turu kasvu tagajad.</p>
             </div>
         </article>
     
         <article class="brutal-card flex flex-col">
             <div class="border-b-4 border-black relative">
-                <img src="https://mmx.prnewswire.com/media/MS2000717/Global-Electroplating-Market.jpg?id=OA2982416&p=facebook" alt="Pilt" class="w-full h-56 object-cover bg-white">
+                <img src="https://mmx.prnewswire.com/media/MS2000717/Global-Electroplating-Market.jpg?id=OA2982416&p=facebook" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
                 <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
@@ -273,15 +273,15 @@
                     <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Globaalne</span>
                 </div>
                 <a href="https://www.prnewswire.co.uk/news-releases/electroplating-market-to-reach-usd-21-26-billion-by-2034--driven-by-automotive-electronics-and-sustainable-surface-finishing-technologies-reports-maximize-market-research-302895939.html" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Elektroplaatimise turg jõuab 2034. aastaks 21,26 miljardi dollarini, mida juhivad autotööstus, elektroonika ja jätkusuutlikud pinnakatte tehnoloogiad, teatab Maximize Market Research</h2>
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Elektroplaatimise turg jõuab 2034. aastaks 21,26 miljardi dollarini, mida ajendavad autotööstus, elektroonika ja jätkusuutlikud pinnakatte tehnoloogiad, teatab Maximize Market Research</h2>
                 </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Elektroplaatimise globaalne turg oli 2025. aastal väärt 16,45 miljardit dollarit ja prognoositakse laienemist 2,89% aastase kasvumääraga 2026. aastast kuni 2034. aastani. Turgu juhivad autotööstus, elektroonika ja jätkusuutlikud pinnakatte tehnoloogiad.</p>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Globaalne elektroplaatimise turg kasvas 2025. aastal 16,45 miljardi dollarini ja prognoositakse laienemist 2,89% aastase kasvumääraga 2026. kuni 2034. aastani. Uuringu kohaselt on peamised kasvumootorid autotööstus, elektroonika ja jätkusuutlikud pinnakatte tehnoloogiad.</p>
             </div>
         </article>
     
         <article class="brutal-card flex flex-col">
             <div class="border-b-4 border-black relative">
-                <img src="https://media.thenextweb.com/2026/07/gm-q2-earnings-cadillac-gas-ev-pullback.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white">
+                <img src="https://media.thenextweb.com/2026/07/gm-q2-earnings-cadillac-gas-ev-pullback.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
                 <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
@@ -290,15 +290,15 @@
                     <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Põhja-Ameerika</span>
                 </div>
                 <a href="https://thenextweb.com/news/gm-q3-ev-collapse-europe-fuel" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">GM müügid langesid 5,5%, kui elektriautode müügid kahanesid ja Toyota läheneb 136 000-le</h2>
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">GM müük langes 5,5%, kui elektrimudelid kokku kukkusid ja Toyota jõudis 136 000 lähedale</h2>
                 </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">General Motorsi Equinox EV müük langes eelmisel kvartalil 92,4%, kui USA lõpetas 7500-dollarilise maksusoodustuse. Euroopa jätkas elektriautodele määruste kehtestamist ja elektriautod moodustasid 29% registreerimistest.</p>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">General Motorsi Equinox EV müük langes eelmisel kvartalil 92,4%, kui USA lõpetas 7500-dollarilise maksusoodustuse. Euroopa hoidis oma nõudeid ja elektriautod moodustasid 29% registreerimistest.</p>
             </div>
         </article>
     
         <article class="brutal-card flex flex-col">
             <div class="border-b-4 border-black relative">
-                <img src="https://media.assettype.com/freepressjournal/2026-10-01/1lwcfzhw/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Queen-Of-All-Mayhem-2026-10-02T000340.587.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white">
+                <img src="https://media.assettype.com/freepressjournal/2026-10-01/1lwcfzhw/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Queen-Of-All-Mayhem-2026-10-02T000340.587.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
                 <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
@@ -307,24 +307,24 @@
                     <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Aasia</span>
                 </div>
                 <a href="https://www.freepressjournal.in/mumbai/mumbai-crime-dri-busts-gold-and-diamond-smuggling-syndicate-at-csmi-airport-8-arrested" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Mumbai kuritegevus: DRI paljastab kulda ja teemante smugeldava sündikaadi CSMI lennujaamas; 8 vahistatud</h2>
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Mumbai kuritegevus: DRI purustab kulda ja teemante smugeldava sündikaadi CSMI lennujaamas; 8 vahistatud</h2>
                 </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">DRI Mumbai on paljastanud väidetava kulla ja teemante smugeldava sündikaadi CSMIA-s ning vahistanud kaheksa inimest, sealhulgas Bangladeshi ja Sri Lanka kodanikud. Pärast lennujaama maapealse töötaja ja Dubaisse suunduva reisija kinnipidamist konfiskeeris amet 8 320 grammi kulda väärtusega 12,64 krooni ja teemante väärtusega 1,10 krooni.</p>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">DRI Mumbai on purustanud väidetava kulla ja teemante smugeldava sündikaadi CSMIA-s ning vahistanud kaheksa inimest, sealhulgas Bangladeshi ja Sri Lanka kodanikud. Agentuur konfiskeeris 8 320 grammi kullast väärtusega 12,64 krooni ja teemandid väärtusega 1,10 krooni pärast lennujaama maapealse töötaja ja Dubaisse suunduva reisija peatamist.</p>
             </div>
         </article>
     
         <article class="brutal-card flex flex-col">
             <div class="border-b-4 border-black relative">
-                <img src="https://www.cheatsheet.com/wp-content/uploads/2026/09/Screenshot-of-Taylor-Swift-pointing-to-her-ring-during-Chiefs-game-1.webp?w=1200" alt="Pilt" class="w-full h-56 object-cover bg-white">
+                <img src="https://www.cheatsheet.com/wp-content/uploads/2026/09/Screenshot-of-Taylor-Swift-pointing-to-her-ring-during-Chiefs-game-1.webp?w=1200" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
                 <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
                 <div class="flex flex-wrap gap-2 mb-4">
                     <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Kellad ja ehted</span>
-                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Põhja-Ameerika</span>
+                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Globaalne</span>
                 </div>
                 <a href="https://www.cheatsheet.com/news/taylor-swift-likely-keep-ditching-engagement-ring-promotional-eras-says-expert.html/" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Taylor Swift jätkab tõenäoliselt kihlasõrmuse vahetamist uute reklaamimaterjalide vastu, ütleb ekspert</h2>
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Taylor Swift tõenäoliselt jätkab kihlasõrmuse vahetamist uute reklaamimaterjalide vastu, ütleb ekspert</h2>
                 </a>
                 <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Taylor Swift vahetas oma kihlasõrmuse uute reklaammaterjalide vastu. Ehtekunstnik usub, et ta jätkab seda praktikat.</p>
             </div>
@@ -332,7 +332,7 @@
     
         <article class="brutal-card flex flex-col">
             <div class="border-b-4 border-black relative">
-                <img src="https://pyxis.nymag.com/v1/imgs/ccd/909/fa51b2989dcbd991ba7db480c766de431a-advent-calendars-fashion-10-01-26.1x.rsocial.w1200.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white">
+                <img src="https://pyxis.nymag.com/v1/imgs/ccd/909/fa51b2989dcbd991ba7db480c766de431a-advent-calendars-fashion-10-01-26.1x.rsocial.w1200.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
                 <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 6/10</div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
@@ -343,30 +343,13 @@
                 <a href="https://nymag.com/strategist/article/fashion-jewelry-advent-calendars-2026.html" target="_blank" class="hover:text-pink-600 transition-colors">
                     <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Parimad moe- ja ehtekalendrid (seni)</h2>
                 </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Artiklis leiti parimad moe- ja ehtekalendrid brändidelt nagu Happy Socks, Pink, Altar’d State, Beautiful Earth ja teised. Kalendrid pakuvad erinevaid moe- ja ehtekinke, mis sobivad ideaalselt jõuluhooajaks.</p>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Artiklis on välja toodud parimad moe- ja ehtekalendrid, sealhulgas sellised brändid nagu Happy Socks, Pink, Altar'd State, Beautiful Earth ja teised. Kalendrid pakuvad erinevaid moe- ja ehtetooteid ning on populaarsed tarbijate seas.</p>
             </div>
         </article>
     
         <article class="brutal-card flex flex-col">
             <div class="border-b-4 border-black relative">
-                <img src="https://akns-images.eonline.com/eol_images/Entire_Site/20261001/2f2be4d2-9e17-47e0-90c1-899427f86952_1790904791.jpg?fit=around%7C1200:1200&output-quality=90&crop=1200:1200;center,top" alt="Pilt" class="w-full h-56 object-cover bg-white">
-                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 5/10</div>
-            </div>
-            <div class="p-6 flex flex-col flex-grow">
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Meelelahutus</span>
-                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Põhja-Ameerika</span>
-                </div>
-                <a href="https://www.eonline.com/news/1436675/khloe-kardashians-daughter-true-wants-baby-girl-sister-with-frozen-embryo" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Khloe Kardashiani tütar True soovib beebitüdrukust õde külmutatud embrüo abil</h2>
-                </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Khloe Kardashian jagas, et tema 8-aastane tütar True Thompson loodab, et neil õnnestub saada veel üks beebitüdruk külmutatud embrüo abil, et True saaks lisaks vennale Tatum Thompsonile ka õe.</p>
-            </div>
-        </article>
-    
-        <article class="brutal-card flex flex-col">
-            <div class="border-b-4 border-black relative">
-                <img src="https://media.rnztools.nz/rnz/image/upload/s--bbuAR1Zt--/t_tohu-badge-facebook/f_auto/q_auto/4JHE2H9_foot3_jpg" alt="Pilt" class="w-full h-56 object-cover bg-white">
+                <img src="https://deadline.com/wp-content/uploads/2026/10/Ben-Affleck-Animals.jpg?w=1024" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
                 <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 6/10</div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
@@ -374,78 +357,95 @@
                     <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Meelelahutus</span>
                     <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Globaalne</span>
                 </div>
-                <a href="https://www.rnz.co.nz/life/screens/movies/40-years-since-slice-of-heaven-footrot-flats-back-to-celebrate" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">40 aastat alates "Slice of Heaven" - Footrot Flats tagasi tähistamiseks</h2>
+                <a href="https://deadline.com/2026/10/ben-affleck-used-ai-lots-of-things-animals-1237145166/" target="_blank" class="hover:text-pink-600 transition-colors">
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Ben Affleck kasutas AI-d Netflixi filmis "Animals"</h2>
                 </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Footrot Flats on tagasi koos ümber töötatud treileriga, et tähistada päeva, mil selle teemalaul oli 40 aastat tagasi edetabelite tipus.</p>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Ben Affleck näitab oma viimases projektis "Animals" oma AI-tehnoloogiat, mille ta varem Netflixile müüs.</p>
             </div>
         </article>
     
         <article class="brutal-card flex flex-col">
             <div class="border-b-4 border-black relative">
-                <img src="https://www.asiaone.com/sites/default/files/styles/article_top_image/public/original_images/Oct2026/Woodlands%20Checkpoint%20very%20heavy%20traffic%202%20october.png?itok=leznU8Hf" alt="Pilt" class="w-full h-56 object-cover bg-white">
-                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 7/10</div>
-            </div>
-            <div class="p-6 flex flex-col flex-grow">
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Meelelahutus</span>
-                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Aasia</span>
-                </div>
-                <a href="https://www.asiaone.com/singapore/woodlands-checkpoint-heavy-traffic-2-october-bke" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">'Väga tiheda' liiklusega väljumine Woodlandsi piiripunktis 2. oktoobri hommikul, järjekord ulatus BKE-ni: ICA</h2>
-                </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">ICA teatas sotsiaalmeedias, et Woodlandsi piiripunktis on hetkel "väga tiheda" väljumisliiklus. Järjekord on jõudnud Bukit Timah maanteeni (Woodlands), Exit 10A lähedusse. Maanteeameti liiklusteabe kaamerad näitavad...</p>
-            </div>
-        </article>
-    
-        <article class="brutal-card flex flex-col">
-            <div class="border-b-4 border-black relative">
-                <img src="https://cassette.sphdigital.com.sg/image/straitstimes/a4c2d26b91f312c5034f5031f563a329036271d0001b0c1e45589d7de81fe005" alt="Pilt" class="w-full h-56 object-cover bg-white">
-                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 9/10</div>
-            </div>
-            <div class="p-6 flex flex-col flex-grow">
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Tervis</span>
-                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Aafrika</span>
-                </div>
-                <a href="https://www.straitstimes.com/world/doctors-without-borders-worker-contracts-ebola-in-congo-evacuated-to-netherlands" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Arstid ilma piirideta töötaja nakatus Ebola Kongos</h2>
-                </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Arstid ilma piirideta töötaja, kellel on Ebola, evakueeritakse Hollandisse Kongo jätkuva puhangu ajal, kus on üle 8000 juhtumi ja peaaegu 4000 surmajuhtumi.</p>
-            </div>
-        </article>
-    
-        <article class="brutal-card flex flex-col">
-            <div class="border-b-4 border-black relative">
-                <img src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://cloudfront-us-east-1.images.arcpublishing.com/wapo/TLNSRFCVKZHPBLDWKHOAAKP4DA.jpg&w=1440" alt="Pilt" class="w-full h-56 object-cover bg-white">
+                <img src="https://s.yimg.com/lo/mysterio/api/4a173041aa600f7272922172277cadc7f0fb7ac41c6cbb6499dd77558ff51c80/lightyear_networkapi/resizefill_w1200%3Bquality_80%3Bformat_jpg/https%3A%2F%2Fmedia.zenfs.com%2Fen%2Fdeadline.com%2F22c589569766e9fa3bdf5643da567a32.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
                 <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 6/10</div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
                 <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Tervis</span>
-                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Põhja-Ameerika</span>
+                    <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Meelelahutus</span>
+                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Globaalne</span>
                 </div>
-                <a href="https://www.washingtonpost.com/opinions/2026/10/01/fallopian-tube-removal-is-not-well-known-here-why/" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Munajuhade eemaldamine pole hästi tuntud. Siin on põhjus. - The Washington Post</h2>
+                <a href="https://www.yahoo.com/entertainment/movies/articles/ben-affleck-used-ai-lots-024501550.html" target="_blank" class="hover:text-pink-600 transition-colors">
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Ben Affleck kasutas AI-d Netflixi filmis "Animals": "See on väga inimlik film"</h2>
                 </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Artikkel vastab lugejate küsimustele protseduuri kohta, mis aitab ennetada munasarjavähki.</p>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Ben Affleck kasutas oma AI-firmat Netflixi filmis "Animals", mida ta nimetas väga inimlikuks. See on tema viimane projekt pärast firma müümist.</p>
             </div>
         </article>
     
         <article class="brutal-card flex flex-col">
             <div class="border-b-4 border-black relative">
-                <img src="https://images.timesnownews.com/thumb/msid-156259142,thumbsize-165125,width-1280,height-720,resizemode-75/156259142.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white">
+                <img src="https://imagez.tmz.com/image/89/16by9/2026/10/02/891b62042dca4ef7a7d10367e62c7897_xl.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
+                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 6/10</div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Meelelahutus</span>
+                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Põhja-Ameerika</span>
+                </div>
+                <a href="https://www.tmz.com/2026/10/01/ken-urker-dead/" target="_blank" class="hover:text-pink-600 transition-colors">
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Gypsy Rose'i lapse isa Ken Urker surnud 33-aastaselt</h2>
+                </a>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Gypsy Rose Blanchardi endine kihlatu Ken Urker on surnud 33-aastaselt. TMZ on sellest teada saanud.</p>
+            </div>
+        </article>
+    
+        <article class="brutal-card flex flex-col">
+            <div class="border-b-4 border-black relative">
+                <img src="https://www.sciencealert.com/images/2026/09/GutInflammationhealthy.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
                 <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
                 <div class="flex flex-wrap gap-2 mb-4">
                     <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Tervis</span>
-                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Põhja-Ameerika</span>
+                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Globaalne</span>
                 </div>
-                <a href="https://www.timesnownews.com/health/top-us-expert-on-ultra-processed-foods-what-they-do-to-your-body-and-why-they-are-a-health-concern-article-156259144" target="_blank" class="hover:text-pink-600 transition-colors">
-                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">USA ekspert ultra-töödeldud toitude mõjust kehale ja terviseriskidest</h2>
+                <a href="https://www.sciencealert.com/a-hidden-compound-in-healthy-plant-based-foods-may-be-fueling-gut-inflammation" target="_blank" class="hover:text-pink-600 transition-colors">
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Varjatud ühend tervislikes taimsetes toitudes võib soodustada soolepõletikku</h2>
                 </a>
-                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">USA ekspert jagab teadmisi ultra-töödeldud toitude mõjust kehale ja rõhutab nende terviseriske. Uuringud näitavad, et sellised toidud võivad kahjustada tervist ning seetõttu on oluline teadlikkus nende tarbimise osas.</p>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Uus uuring viitab sellele, et mõned tervislikumad taimse päritoluga toidud nagu spinat, peet, rabarber, mandlid ja maguskartulid võivad olla seotud põletikulise soolehaigusega (IBD).</p>
+            </div>
+        </article>
+    
+        <article class="brutal-card flex flex-col">
+            <div class="border-b-4 border-black relative">
+                <img src="https://s.france24.com/media/display/8c033d32-be09-11f1-9580-1ff0321dbbd3/w:1280/p:16x9/41447da71f75aac6477cc683bbda080ed5545a23.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
+                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Tervis</span>
+                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Aasia</span>
+                </div>
+                <a href="https://www.france24.com/en/live-news/20261002-viral-anti-vax-posts-weaponise-philippine-inoculation-fears" target="_blank" class="hover:text-pink-600 transition-colors">
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Viiruslikud vaktsiinivastased postitused relvastavad Filipiinide vaktsineerimise hirme</h2>
+                </a>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Filipiinide vaktsineerimiskampaania osana vaktsineerimise saanud kolmeaastase poja haigestumise järel levis tema foto kiiresti Facebookis koos väidetega, et vaktsineerimine...</p>
+            </div>
+        </article>
+    
+        <article class="brutal-card flex flex-col">
+            <div class="border-b-4 border-black relative">
+                <img src="https://scx2.b-cdn.net/gfx/news/hires/2026/new-surgical-technique.jpg" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB';">
+                <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: 8/10</div>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-pink-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Tervis</span>
+                    <span class="bg-blue-300 text-black px-2 py-1 text-xs font-bold uppercase brutal-tag">Globaalne</span>
+                </div>
+                <a href="https://medicalxpress.com/news/2026-10-surgical-technique-reconstructs-clitoris-treatment.html" target="_blank" class="hover:text-pink-600 transition-colors">
+                    <h2 class="text-4xl font-marquee uppercase leading-tight mb-4">Uus kirurgiline tehnik rekonstrueerib kliitori pärast vulvaarvähi ravi</h2>
+                </a>
+                <p class="text-sm font-medium leading-relaxed mb-6 flex-grow">Naistele, kes kaotavad osa kliitorist vulvaarvähi tõttu, on nüüd välja töötatud esmakordselt kliitori rekonstrueerimise protseduur. See juhtub 40 aastat pärast esimest peenise rekonstrueerimise operatsiooni. Esialgsete patsientide tulemused on julgustavad.</p>
             </div>
         </article>
     
