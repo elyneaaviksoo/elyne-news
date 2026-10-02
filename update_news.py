@@ -12,6 +12,7 @@ client = OpenAI(api_key=OPENAI_KEY)
 
 all_articles = []
 seen_urls = set()
+seen_titles = set() # UUS! Hoiame meeles ka pealkirju, et vältida sisulisi kordusi
 
 print("Otsin Eesti uudiseid otse ERR-ist...")
 
@@ -21,20 +22,23 @@ try:
     err_root = ET.fromstring(err_response.content)
     
     added_err = 0
-    # Käime läbi kõik ERR-i uudised
     for item in err_root.findall('.//item'):
         title = item.find('title').text
         link = item.find('link').text
         description = item.find('description').text
         
-        # Proovime leida uudise pilti
+        # Puhastame pealkirja, et võrdlus oleks täpne
+        norm_title = title.lower().strip() if title else ""
+        
         image_url = ""
         enclosure = item.find('enclosure')
         if enclosure is not None:
             image_url = enclosure.get('url', '')
             
-        if link not in seen_urls:
+        # Topeltkontroll: kas URL VÕI pealkiri on juba olemas?
+        if link not in seen_urls and norm_title not in seen_titles:
             seen_urls.add(link)
+            seen_titles.add(norm_title)
             all_articles.append({
                 "category": "Päevakajalised",
                 "title": title,
@@ -44,18 +48,16 @@ try:
             })
             added_err += 1
             
-        # Võtame täpselt 2 kõige värskemat ERR-i uudist
         if added_err >= 2:
             break
 except Exception as e:
     print("Viga ERR-ist lugemisel:", e)
 
 
-# 2. GNEWS MAAILMAUUDISTE LUGEMINE (22 uudist)
+# 2. GNEWS MAAILMAUUDISTE LUGEMINE
 print("Otsin ülejäänud maailmauudiseid GNewsist...")
 
 categories = [
-    # Päevakajaliste alt võtame nüüd vaid 1 globaalse (sest 2 tk on juba ERRist käes)
     {"name": "Päevakajalised", "queries": [{"endpoint": "top-headlines?category=general", "limit": 1}]},
     {"name": "Majandus", "queries": [{"endpoint": "top-headlines?category=business", "limit": 3}]},
     {"name": "(Geo)poliitika", "queries": [{"endpoint": "top-headlines?category=world", "limit": 3}]},
@@ -69,22 +71,27 @@ categories = [
 for cat in categories:
     cat_name = cat["name"]
     for q in cat["queries"]:
-        url = f"https://gnews.io/api/v4/{q['endpoint']}&lang=en&max=5&apikey={GNEWS_KEY}"
+        url = f"https://gnews.io/api/v4/{q['endpoint']}&lang=en&max=8&apikey={GNEWS_KEY}"
         response = requests.get(url)
         data = response.json()
         
         added_count = 0
         if "articles" in data:
             for art in data["articles"]:
-                art_url = art["url"]
-                if art_url not in seen_urls:
+                art_url = art.get("url", "")
+                art_title = art.get("title", "")
+                norm_title = art_title.lower().strip()
+                
+                # Topeltkontroll GNewsis!
+                if art_url not in seen_urls and norm_title not in seen_titles:
                     seen_urls.add(art_url)
+                    seen_titles.add(norm_title)
                     all_articles.append({
                         "category": cat_name,
-                        "title": art["title"],
-                        "description": art["description"],
+                        "title": art_title,
+                        "description": art.get("description", ""),
                         "url": art_url,
-                        "image": art["image"]
+                        "image": art.get("image", "")
                     })
                     added_count += 1
                     if added_count >= q["limit"]:
@@ -97,14 +104,14 @@ kuud = ["jaanuar", "veebruar", "märts", "aprill", "mai", "juuni", "juuli", "aug
 tana = datetime.datetime.now()
 kuupaev_tekst = f"{tana.day}. {kuud[tana.month - 1]} {tana.year}"
 
-# 4. HTML BAAS (Disain 1: Neobrutalism)
+# 4. HTML BAAS
 html = f"""
 <!DOCTYPE html>
 <html lang="et">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lihtsalt üks valik uudiseid</title>
+    <title>Lihtsalt valik uudiseid</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
@@ -131,22 +138,24 @@ html = f"""
 
     <header class="max-w-7xl mx-auto mb-16 brutal-card p-8 md:p-12 bg-yellow-50">
         <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-8 border-b-4 border-black pb-4">
-            <h1 class="text-7xl md:text-9xl font-marquee uppercase leading-none">Lihtsalt üks valik uudiseid</h1>
+            <h1 class="text-7xl md:text-9xl font-marquee uppercase leading-none">Lihtsalt valik uudiseid</h1>
             <div class="text-2xl font-black mt-4 md:mt-0 font-marquee">{kuupaev_tekst}</div>
         </div>
         <p class="text-lg md:text-xl font-medium leading-relaxed max-w-4xl">
-            Ma ei satu eriti uudiseid lugema.. seega mõtlesin, et vaib-koodin endale oma isikliku uudistesaidi, mis iga päev kogub kokku maailmast 24 erinevat uudist. Ja ise valin teemad endale! <br>Et küll ma siis alles hakkan lugema. <br>Aga vaib-koodisin valmis ja tuli välja, et ma lihtsalt ei viitsi uudiseid lugeda ☹ <br>Kuni ma välja mõtlen, mis edasi teha, jookseb see leht siin edasi.. iga päev, 24 uudist maailmas, minu valitud teemadel.
+            Ma eriti ei loe uudiseid, aga mõtlesin, et kui ma ise vaib-koodin endale oma isikliku uudistesaidi, mis iga päev kogub kokku maailmast 24 erinevat uudist.. Ja ise valin teemad endale! Et küll ma siis alles hakkan lugema. Aga vaib-koodisin valmis ja tuli välja, et ma lihtsalt ei viitsi uudiseid lugeda ☹ Kuni ma välja mõtlen, mis edasi teha, jookseb see leht siin edasi.. iga päev, 24 uudist maailmas, minu valitud teemadel.
         </p>
     </header>
 
     <main class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 pb-20">
 """
 
-print(f"Tõlgin uudiseid ({len(all_articles)} tk), määran regioone ja arvutan skoore...")
+print(f"Tõlgin uudiseid ({len(all_articles)} tk)...")
 
-# 5. LASEME AI-L ANDMEID TÖÖDELDA
+# Asenduspilt juhuks kui pilt puudub või on katki
+fallback_image = "https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB"
+
+# 5. AI TÖÖTLUS
 for art in all_articles:
-    # Lisasime juhendisse punkti, et eestikeelseid pealkirju ei tõlgitaks!
     prompt = f"Määra, millisest maailmajaost (Eesti, Euroopa, Aafrika, Aasia, Põhja-Ameerika, Lõuna-Ameerika või Globaalne) järgnev uudis räägib. Hinda 10 palli süsteemis, kui oluline või mõjukas on see uudis (anna ainult number, nt 7.5). Kui tekst on juba eesti keeles, jäta pealkiri originaali, muidu tõlgi see eesti keelde. Tee sisust täpselt 3-lauseline eestikeelne kokkuvõte.\n\nPealkiri: {art['title']}\nSisu: {art['description']}\n\nVasta TÄPSELT sellises formaadis:\nREGIOON: [Maailmajagu]\nSKOOR: [Number]\nPEALKIRI: [Eestikeelne pealkiri]\nKOKKUVÕTE: [3-lauseline kokkuvõte]"
     
     try:
@@ -178,12 +187,14 @@ for art in all_articles:
         est_region = "Määramata"
         est_score = "?"
 
-    img_url = art['image'] or 'https://via.placeholder.com/800x600/ffd6e0/000000?text=PILT+PUUDUB'
+    # Valime algse pildi, või kui see puudub, siis asenduspildi
+    img_url = art['image'] if art['image'] else fallback_image
     
+    # Lisatud 'onerror' kood! See vahetab katkise pildi automaatselt asenduspildi vastu.
     html += f"""
         <article class="brutal-card flex flex-col">
             <div class="border-b-4 border-black relative">
-                <img src="{img_url}" alt="Pilt" class="w-full h-56 object-cover bg-white">
+                <img src="{img_url}" alt="Pilt" class="w-full h-56 object-cover bg-white" onerror="this.onerror=null; this.src='{fallback_image}';">
                 <div class="absolute bottom-4 right-4 bg-black text-white px-3 py-1 font-bold text-sm">🔥 Mõju: {est_score}/10</div>
             </div>
             <div class="p-6 flex flex-col flex-grow">
@@ -208,5 +219,4 @@ html += """
 with open("index.html", "w", encoding="utf-8") as f:
     f.write(html)
 
-
-print("Kõik 24 unikaalset uudist on valmis ja salvestatud!")
+print("Uudised on töödeldud! Katkised pildid ja kordused on eemaldatud.")
